@@ -1,0 +1,15 @@
+.header {
+  width: 1200px;
+  padding: 15px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: 1px solid #e2dede;
+  border-left: 1px solid #d1cccc;
+  border-bottom: 1px solid #d1cccc;
+}
+
+.logo {
+  width: 100px;
+}
+/*# sourceMappingURL=main.css.map */
