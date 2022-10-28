@@ -1,19 +1,23 @@
+.container{
+    background:linear-gradient(to bottom, white, #bfbfe9 );
+    height: 100vh;
+}
 .header{
     width: 1200px;
     padding: 15px;
 background-color: rgb(255, 255, 255);
 margin-left: auto;
 margin-right: auto;
-border: 1px solid #4c8ec0;
+// border-bottom: 1px solid #4c8ec0;
 border-top: none;
 border-radius: 0 0 5px 5px;
 
 }
 
 .header-left_side{
-    margin-left: auto;
+    // margin-left: auto;
     margin-right: auto;
-    width: 175px;
+    width: 130px;
     background-color: white;
 display: flex;
 flex-direction: column;
@@ -27,5 +31,8 @@ justify-content: center;
 .header-title{
     margin-top: 10px;
 font-size: 17px;
+
+}
+.contacts{
 
 }
