@@ -1,0 +1,53 @@
+.header-bar{
+width: 1150px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+// justify-content: center;
+}
+.bar-list{
+display: flex;
+font-family: Caveat;
+
+}
+.bar-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+margin-right: 50px;
+}
+.bar_text{
+    font-size: 20px;
+    color: rgb(33, 42, 39);
+}
+.bar_icon{
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    right: -30px;
+    width: 25px;
+    height: 25px;
+    fill: green;
+}
+.bar-socials_list{
+display: flex;
+align-items: center;
+padding-right: 50px;
+// width: 170px;
+}
+.bar-socials_item{
+    margin-top: 3px;
+    margin-left: 15px;
+}
+.bar-socials_link{
+    
+    width: 25px;
+    height: 25px;
+}
+.bar-socials_icon{
+width: 25px;
+height: 25px;
+fill: #515167;
+}

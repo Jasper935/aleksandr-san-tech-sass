@@ -44,7 +44,7 @@ const swiper = new Swiper(slider, {
       1200: {
         delay:3,
         slidesPerView: 1,
-        spaceBetween: 100,
+        spaceBetween: 50,
         speed: 1500,
         slideToClickedSlide: true,
         // grabCursor: true,

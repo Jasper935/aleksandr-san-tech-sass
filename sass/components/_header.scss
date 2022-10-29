@@ -43,18 +43,34 @@ justify-content: space-between;
   display: block;
   align-items: center;
 }
-
+//------------------------------------NAVIGATION-----------------------------
 .nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.nav-list{
+list-style: none;
+display: flex;
+flex-direction: row;
+}
+.nav-item{
+  margin-right: 50px;
+  
+}
+.nav-item:last-child{
+  margin-right: 0px;
+  
+}
 .nav-link {
   color: #afafb4;
   text-decoration: none;
-  margin-right: 50px;
+  transition: all 0.2s linear;
 }
-
+.nav-link:hover{
+  color: #ffffff;
+}
+//------------------------------------NAVIGATION-END-------------------------------
 .contacts {
   display: flex;
   flex-direction: column;
@@ -62,7 +78,7 @@ justify-content: space-between;
   justify-content: center;
 }
 .contacts_link {
-  padding: 0 20px;
+  padding: 2px 20px;
   display: flex;
   // font-family: cursive;
   color: white;

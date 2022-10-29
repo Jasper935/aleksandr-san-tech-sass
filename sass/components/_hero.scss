@@ -1,9 +1,9 @@
 .hero{
-    margin-top: 30px;
+    
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    height: 600px;
+    height: 500px;
     border-radius: 15px;
     
     background-color: #cfdae3;
@@ -15,7 +15,7 @@
     height: 500px;
 }
 .swiper-wrapper{
-    // margin-top: 50px;
+    
     width: 100%;
     height: 100%;
     border-radius: 15px 15px 0 0;
@@ -25,12 +25,10 @@
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 100%;
-    // background-color: #4bc151;
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-image: url('../images/slide1.JPG');
+    
 }
 .swiper-slide:nth-child(1){
     background-image: url('../../images/slide1.JPG'); 
