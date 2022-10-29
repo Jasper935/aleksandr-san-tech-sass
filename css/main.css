@@ -187,6 +187,7 @@ input[type=range] {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px;
 }
 
 .bar-list {
@@ -216,6 +217,14 @@ input[type=range] {
   fill: green;
 }
 
+.bar-title {
+  margin: 0;
+  margin-left: auto;
+  height: 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
 .bar-socials_list {
   display: flex;
   align-items: center;
@@ -236,6 +245,12 @@ input[type=range] {
   width: 25px;
   height: 25px;
   fill: #515167;
+  transition: all 0.3s ease;
+}
+
+.bar-socials_icon:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .hero {
