@@ -94,11 +94,11 @@ input[type=range] {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  justify-content: space-between;
   border-radius: 0 0 15px 15px;
 }
 
 .header-left_side {
-  margin-right: auto;
   width: auto;
   display: flex;
   padding: 0 10 0 5px;
@@ -128,19 +128,38 @@ input[type=range] {
   align-items: center;
 }
 
-.header-title--bot::after {
-  position: absolute;
-  top: -2px;
-  left: 12px;
-  width: 75px;
-  height: 2px;
-  border-radius: 2px;
-  background-color: #000000;
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header_tel {
+.nav-link {
+  color: #afafb4;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts_link {
+  padding: 0 20px;
+  display: flex;
   color: white;
   text-decoration: none;
+  font-size: 17px;
+  align-items: center;
+}
+
+.tel_icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-right: 5px;
 }
 
 .hero {
@@ -148,7 +167,7 @@ input[type=range] {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  height: 700px;
+  height: 600px;
   border-radius: 15px;
   background-color: #cfdae3;
   overflow: hidden;
@@ -200,7 +219,7 @@ input[type=range] {
   font-size: 35px;
   color: white;
   text-align: center;
-  background-color: #43484c;
+  background-color: rgba(142, 137, 137, 0.5);
   border-radius: 15px;
   padding: 3px 20px;
 }
