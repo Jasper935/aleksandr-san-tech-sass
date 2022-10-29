@@ -354,7 +354,7 @@ input[type=range] {
   display: flex;
   width: 700px;
   border-bottom: 2px solid #8f8b8b;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .service-name {
