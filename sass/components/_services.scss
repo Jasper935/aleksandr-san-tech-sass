@@ -1,0 +1,53 @@
+.services{
+    margin-left: auto;
+    margin-right: auto;
+width: 1200px;
+height: 500px;
+
+// background: linear-gradient(to bottom, #dee2ff, white);
+background-color: transparent;
+border: 1px solid #ffffff;
+border-top: none;
+// margin-top: 20px;
+margin-bottom: 50px;
+// border-radius: 15px;
+display: flex;
+flex-direction: column;
+// align-items: center;
+// background-image: url('https://cdn.pixabay.com/photo/2018/05/24/04/58/tag-3425877_960_720.jpg');
+justify-content: center;
+align-items: center;
+background-size: cover;
+}
+.services-title{
+    // font-family: Caveat;
+    color: #255171;
+margin: 25px 0;
+font-size: 45px;
+font-weight: 600;
+}
+.service-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+width: 800px;
+height: 300px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 0 10px 2px #a4a6b2;
+}
+.service-item{
+    display: flex;
+    width: 700px;
+border-bottom: 1px dashed rgb(143, 139, 139);
+}
+.service-name{
+    color: #1b1b1c;
+font-size: 20px;
+}
+.service-price{
+    color: #255171;
+margin-left: auto;
+}
