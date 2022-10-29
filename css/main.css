@@ -11,8 +11,8 @@ body {
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -324,11 +324,9 @@ input[type=range] {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  height: 500px;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-top: none;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -347,10 +345,8 @@ input[type=range] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  padding: 50px 20px;
   width: 800px;
-  height: 300px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px #a4a6b2;
@@ -359,7 +355,8 @@ input[type=range] {
 .service-item {
   display: flex;
   width: 700px;
-  border-bottom: 1px dashed #8f8b8b;
+  border-bottom: 2px solid #8f8b8b;
+  margin-top: 20px;
 }
 
 .service-name {
