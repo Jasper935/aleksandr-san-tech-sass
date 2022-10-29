@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Roboto:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- //swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Roboto:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Сантехніка</title>
-  </head>
-  <body>
-    <div class="container">
-    <header class="header">
-      <div class="header-left_side">
-        <img src="./images/log.png" alt="logo" class="logo" />
-        <h3 class="header-title">Григорук <span class="header-title--bot"> Олександр</span></h3>
-      </div>
-      <div class="contacts">
+</head>
 
-      </div>
-    </header>
-    <section class="hero"></section>
-</div>
-  </body>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left_side">
+                <img src="./images/log.png" alt="logo" class="logo" />
+                <h3 class="header-title">Григорук <span class="header-title--bot"> Олександр</span></h3>
+            </div>
+            <div class="contacts">
+                <a class="header_tel" href="tel:+380930391518">
+                    <svg class="tel_icon" width="25" height="25">
+                        <use href="./images/icons.svg#icon-tel"></use>
+                    </svg> +380 93 039 15 18 </a>
+                <a class="header_tel" href="tel:+380930391518">
+                    <svg class="tel_icon" width="25" height="25">
+                        <use href="./images/icons.svg#icon-tel"></use>
+                    </svg> +380 93 039 15 18 </a>
+            </div>
+
+        </header>
+        <section class="hero">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="swiper-img" src="./images/slide1.JPG" alt="slide1">
+                        <h4 class="swiper-subtitle">Монтаж отоплення</h4>
+                    </div>
+                    <div class="swiper-slide"> <img class="swiper-img" src="./images/ss.JPG" alt="slide1">
+                        <h4 class="swiper-subtitle">Водопровід, каналізація</h4>
+                    </div>
+                    <div class="swiper-slide"><img class="swiper-img" src="./images/slide4.JPG" alt="slide1">
+                        <h4 class="swiper-subtitle">Тепла підлога</h4>
+                    </div>
+                    <div class="swiper-slide"><img class="swiper-img" src="./images/slide3.JPG" alt="slide1">
+                        <h4 class="swiper-subtitle">Монтаж сантехніки</h4>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+
+
+
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+
 </html>
