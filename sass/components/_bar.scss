@@ -56,10 +56,16 @@ padding-right: 50px;
 .bar-socials_icon{
 width: 25px;
 height: 25px;
-fill: #515167;
+
 transition: all 0.3s ease;
 }
+.bar-socials_icon:first-child{
+    width: 25px;
+    height: 25px;
+    // fill: #872679;
+    transition: all 0.3s ease;
+    }
 .bar-socials_icon:hover{
-    transform: scale(1.1);
+    transform: translateY(-3px);
     transition: all 0.3s ease;
 }
