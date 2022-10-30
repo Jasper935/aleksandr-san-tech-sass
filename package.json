@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "aleksandr-san-tech-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jasper935/aleksandr-san-tech-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jasper935/aleksandr-san-tech-sass/issues"
+  },
+  "homepage": "https://github.com/Jasper935/aleksandr-san-tech-sass#readme",
+  "description": ""
+}
