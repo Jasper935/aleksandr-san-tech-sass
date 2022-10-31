@@ -391,7 +391,7 @@ input[type=range] {
 
 .questions-item {
   position: relative;
-  width: 1000px;
+  width: 1100px;
   border-top: 1px solid white;
   padding: 15px 0;
 }
@@ -408,11 +408,15 @@ input[type=range] {
   display: block;
   font-size: 25px;
   font-weight: 200;
+  transition: all 0.1s ease;
+  transform: scale(1);
+  color: white;
 }
 
 .questions-text--hidden {
   opacity: 0;
-  display: none;
+  position: absolute;
+  transform: scale(0);
 }
 
 .questions-btn {
