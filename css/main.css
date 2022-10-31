@@ -401,6 +401,7 @@ input[type=range] {
   position: relative;
   width: 1000px;
   border-top: 1px solid black;
+  padding: 15px 0;
 }
 
 .questions-subtitle {
@@ -417,11 +418,38 @@ input[type=range] {
 .questions-btn {
   background-color: transparent;
   border: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions-btn:hover {
+  background-color: #255171;
+  transition: all 0.3s ease;
+}
+
+.questions-btn:hover .questions-icon {
+  fill: white;
+  transition: all 0.3s ease;
+}
+
+.questions-btn--open {
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
 }
 
 .questions-icon {
-  position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 17px;
+  height: 17px;
 }
 /*# sourceMappingURL=main.css.map */
