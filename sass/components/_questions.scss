@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  height: 400px;
+  height: 800px;
 
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -10,13 +10,15 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-size: cover;
 }
 .questions-title {
   color: #255171;
-  margin: 25px 0;
+  
+  margin: 100px 0;
+//   margin-top: 100px;
   font-size: 45px;
   font-weight: 600;
 }
@@ -65,6 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 .questions-btn:hover {
   background-color: #255171;
@@ -80,7 +83,8 @@
 }
 .questions-icon {
   fill: #255171;
-
+z-index: 0;
   width: 17px;
   height: 17px;
+  pointer-events: none;
 }
