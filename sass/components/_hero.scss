@@ -6,7 +6,7 @@
     height: 500px;
     border-radius: 15px;
     
-    background-color: #cfdae3;
+    background-color: transparent;
     overflow: hidden;
     border-radius: 15px 15px 0 0 ;
 }
@@ -31,18 +31,7 @@
     justify-content: center;
     
 }
-.swiper-slide:nth-child(1){
-    background-image: url('../../images/slide1.JPG'); 
-    
-}
-.swiper-slide:nth-child(2){
-    
-    background-image: url('../images/slide2.JPG');
-}
-// .swiper-slide:nth-child(3n){
-//     background-image: url('../images/slide3.JPG');
-    
-// }
+
 .swiper-img{
     display: block;
     width: 100%;
