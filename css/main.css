@@ -82,8 +82,97 @@ input[type=range] {
   appearance: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    background-image: linear-gradient(180deg, #d0f2f8 0%, #8db8d6 100%);
+  }
+}
+
 .container {
   background-image: linear-gradient(180deg, #d0f2f8 0%, #8db8d6 100%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header {
+    width: 1200px;
+    padding: 10px;
+    background-color: #283945;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 15px 15px;
+  }
+  .header-left_side {
+    width: auto;
+    display: flex;
+    padding: 0 0 0 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    width: 85px;
+  }
+  .header-title {
+    text-align: center;
+    margin-left: 0px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-family: Caveat;
+  }
+  .header-title--bot {
+    position: relative;
+    margin-top: -5px;
+    display: block;
+    align-items: center;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-item {
+    margin-right: 50px;
+  }
+  .nav-item:last-child {
+    margin-right: 0px;
+  }
+  .nav-link {
+    color: #afafb4;
+    text-decoration: none;
+    transition: all 0.2s linear;
+  }
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contacts_link {
+    padding: 2px 20px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    align-items: center;
+  }
+  .tel_icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    margin-right: 5px;
+  }
 }
 
 .header {

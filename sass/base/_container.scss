@@ -1,4 +1,13 @@
-.container {
+
+@media screen and (min-width: 320px)  and (max-width: 768px){
+  .container {
+    width: 100vw;
     background-image: linear-gradient(180deg, #d0f2f8 0%, #8db8d6 100%);
     
   }
+}
+.container {
+  background-image: linear-gradient(180deg, #d0f2f8 0%, #8db8d6 100%);
+  
+}
+
