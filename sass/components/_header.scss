@@ -1,4 +1,104 @@
-@media screen and (min-width: 320px)  and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header {
+    width: 100%;
+    padding: 5px;
+    background-color: #283945;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .header-left_side {
+    width: auto;
+    // background-color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    width: 50px;
+  }
+  .header-title {
+   display: none;
+    text-align: center;
+    margin-left: 0px;
+    // margin-top: 10px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-family: Caveat;
+  }
+  .header-title--bot {
+    display: none;
+    position: relative;
+    margin-top: -5px;
+    display: block;
+    align-items: center;
+  }
+  //------------------------------------NAVIGATION-----------------------------
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-list {
+    width: 120px;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    // gap: 10px;
+  }
+  .nav-item {
+    margin-right: 10px;
+  }
+  .nav-item:last-child {
+    margin-right: 0px;
+  }
+  .nav-link {
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.2s linear;
+  }
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  //------------------------------------NAVIGATION-END-------------------------------
+  .contacts {
+   
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+  }
+  .contacts_link {
+    padding: 2px 3px;
+    display: flex;
+    // font-family: cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    align-items: center;
+  }
+  .tel_icon {
+    width: 13px;
+    height: 13px;
+    fill: white;
+    margin-right: 5px;
+  }
+}
+/* DESKPOT-----------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
   .header {
     width: 1200px;
     padding: 10px;
@@ -6,12 +106,11 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
     border-radius: 0 0 15px 15px;
   }
-  
+
   .header-left_side {
-    
     width: auto;
     // background-color: white;
     display: flex;
@@ -46,25 +145,23 @@
     align-items: center;
     justify-content: center;
   }
-  .nav-list{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
   }
-  .nav-item{
+  .nav-item {
     margin-right: 50px;
-    
   }
-  .nav-item:last-child{
+  .nav-item:last-child {
     margin-right: 0px;
-    
   }
   .nav-link {
     color: #afafb4;
     text-decoration: none;
     transition: all 0.2s linear;
   }
-  .nav-link:hover{
+  .nav-link:hover {
     color: #ffffff;
   }
   //------------------------------------NAVIGATION-END-------------------------------
@@ -89,94 +186,4 @@
     fill: white;
     margin-right: 5px;
   }
-}
-.header {
-  width: 1200px;
-  padding: 10px;
-  background-color: #283945;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-justify-content: space-between;
-  border-radius: 0 0 15px 15px;
-}
-
-.header-left_side {
-  
-  width: auto;
-  // background-color: white;
-  display: flex;
-  padding: 0 0 0 5px;
-  align-items: center;
-  justify-content: center;
-}
-.logo {
-  width: 85px;
-}
-.header-title {
-  // background-color: #73a4c6;
-  text-align: center;
-  margin-left: 0px;
-  // margin-top: 10px;
-  color: #ffffff;
-  font-size: 26px;
-  font-weight: 600;
-  border-radius: 5px;
-  padding: 0 5px;
-  font-family: Caveat;
-}
-.header-title--bot {
-  position: relative;
-  margin-top: -5px;
-  display: block;
-  align-items: center;
-}
-//------------------------------------NAVIGATION-----------------------------
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.nav-list{
-list-style: none;
-display: flex;
-flex-direction: row;
-}
-.nav-item{
-  margin-right: 50px;
-  
-}
-.nav-item:last-child{
-  margin-right: 0px;
-  
-}
-.nav-link {
-  color: #afafb4;
-  text-decoration: none;
-  transition: all 0.2s linear;
-}
-.nav-link:hover{
-  color: #ffffff;
-}
-//------------------------------------NAVIGATION-END-------------------------------
-.contacts {
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
-  justify-content: center;
-}
-.contacts_link {
-  padding: 2px 20px;
-  display: flex;
-  // font-family: cursive;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  align-items: center;
-}
-.tel_icon {
-  width: 20px;
-  height: 20px;
-  fill: white;
-  margin-right: 5px;
 }
