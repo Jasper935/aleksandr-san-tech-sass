@@ -23,8 +23,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -798,8 +798,7 @@ input[type=range] {
   }
 }
 
-/* DESKPOT-----------------------------------------------------------------------------*/
-@media (min-width: 1200px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .about {
     margin-left: auto;
     margin-right: auto;
@@ -809,6 +808,7 @@ input[type=range] {
     border: 1px solid #ffffff;
     border-top: none;
     display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -907,6 +907,201 @@ input[type=range] {
     transform: translateY(-2px);
     transition: all 0.3s ease;
     fill: black;
+  }
+}
+
+/* DESKPOT-----------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .about-title {
+    color: white;
+    margin: 100px 0;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .about-list {
+    padding: 50px 0;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    display: flex;
+    align-items: center;
+  }
+  .about-item {
+    position: relative;
+    width: 250px;
+    margin-left: 100px;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  .about-subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .about_range {
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+  }
+  .about_icon {
+    position: absolute;
+    left: -65px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: white;
+    width: 50px;
+    height: 50px;
+  }
+  .about-contacts {
+    margin-top: 50px;
+    margin-bottom: 75px;
+    padding-top: 5px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid white;
+    padding-bottom: 50px;
+    width: 88%;
+  }
+  .about-contacts_link {
+    padding: 4px 3px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    align-items: center;
+  }
+  .about-contacts_icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    margin-right: 15px;
+  }
+  .about-socials_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding-bottom: 75px;
+  }
+  .about-socials_item {
+    margin-left: 65px;
+  }
+  .about-socials_link {
+    width: 75px;
+    height: 75px;
+  }
+  .about-socials_icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    transition: all 0.3s ease;
+  }
+  .about-socials_icon:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    fill: black;
+  }
+}
+
+/* DESKPOT-----------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .reviews {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 800px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .reviews-title {
+    color: white;
+    margin: 100px 0;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .reviews-form {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    width: 600px;
+  }
+  .reviews-form-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .reviews-input {
+    height: 35px;
+    text-align: center;
+    outline: 1px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    color: white;
+    border: none;
+  }
+  .reviews-input:last-child {
+    margin-top: 10px;
+  }
+  .reviews-input::placeholder {
+    color: white;
+    vertical-align: middle;
+  }
+  .reviews-input:focus::placeholder {
+    color: transparent;
+    display: none;
+  }
+  .reviews_input--text {
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 20px;
+    color: white;
+    height: 80px;
+    resize: none;
+  }
+  .reviews-btn {
+    background-color: black;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    padding: 0 15px;
+  }
+  .reviews-btn:hover {
+    background-color: #453f3f;
+  }
+  .reviews-list {
+    margin-top: 50px;
+    border-radius: 15px;
+    border: 1px solid white;
+    width: 600px;
+    padding: 25px;
+  }
+  .reviews_icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
   }
 }
 /*# sourceMappingURL=main.css.map */

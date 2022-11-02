@@ -1,0 +1,94 @@
+/* DESKPOT-----------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .reviews {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 800px;
+
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .reviews-title {
+    color: white;
+
+    margin: 100px 0;
+
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .reviews-form {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    width: 600px;
+  }
+  .reviews-form-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .reviews-input {
+    height: 35px;
+    text-align: center;
+    outline: 1px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    color: white;
+    border: none;
+  }
+  .reviews-input:last-child {
+    margin-top: 10px;
+  }
+  .reviews-input::placeholder {
+    color: white;
+    vertical-align: middle;
+  }
+  .reviews-input:focus::placeholder {
+    color: transparent;
+    display: none;
+  }
+  .reviews_input--text {
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 20px;
+
+    color: white;
+    height: 80px;
+    resize: none;
+  }
+  .reviews-btn {
+    background-color: black;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    padding: 0 15px;
+  }
+  .reviews-btn:hover {
+    background-color: rgb(69, 63, 63);
+  }
+  //-------------------------------------------------------rev
+  .reviews-list {
+    margin-top: 50px;
+    border-radius: 15px;
+    border: 1px solid white;
+    width: 600px;
+    padding: 25px;
+  }
+  .reviews-item {
+  }
+  .reviews_icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+  }
+}
