@@ -128,16 +128,17 @@
     
     text-align: center;
     margin-left: 0px;
-    
+    display: flex;
     color: #ffffff;
     font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
     padding: 0 5px;
-    // font-family: Caveat;
+   
+    
   }
   .header-title--bot {
-    
+    margin-left: 5px;
     margin-top:1px;
     display: block;
     align-items: center;
