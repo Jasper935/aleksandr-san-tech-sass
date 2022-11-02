@@ -221,7 +221,7 @@ input[type=range] {
     padding: 0 5px;
   }
   .header-title--bot {
-    margin-top: 5px;
+    margin-top: 1px;
     display: block;
     align-items: center;
   }
