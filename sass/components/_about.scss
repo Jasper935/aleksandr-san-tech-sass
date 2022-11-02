@@ -62,4 +62,32 @@ margin-bottom: 10px;
     width: 50px;
     height: 50px;
   }
+  .about-contacts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+     display: flex;
+     gap: 100px;
+     align-items: center;
+     justify-content: center;
+   }
+   .about-contacts_link {
+     padding: 4px 3px;
+     display: flex;
+     
+     color: white;
+     text-decoration: none;
+     font-size: 30px;
+     align-items: center;
+   }
+//    .about-contacts_link:last-child{
+//     ml
+//    }
+   .about-contacts_icon {
+     width: 50px;
+     height: 50px;
+     fill: white;
+     margin-right: 15px;
+   }
 }
+
