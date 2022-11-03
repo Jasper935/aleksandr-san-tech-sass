@@ -193,8 +193,30 @@ margin-bottom: 10px;
     width: 50px;
     height: 50px;
   }
+//-------------------------------------------------
+.about-persons{
+  margin-top: 75px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.about-persons_name{
+color: white;
+font-size: 30px;
+margin-right: 10px;
+font-weight: 300;
+}
+.about-person{
+  color: white;
+  font-size: 30px;
+  // font-weight: 500;
+}
+
+
+//-------------------------------------------------
+
   .about-contacts {
-    margin-top: 50px;
+    margin-top: 75px;
    
     padding-top: 5px;
      display: flex;

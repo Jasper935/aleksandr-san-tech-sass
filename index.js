@@ -4,8 +4,7 @@ const form = document.querySelector("#reviews-form")
 form.addEventListener('submit', onSubmit)
 const btn = document.querySelector('.reviews-btn')
 const date =new Date()
-const currentDate = `${date.getDate()}.${date.getMonth()}
-.${date.getFullYear() } ${date.getHours()<10?'0'+date.getHours():date.getHours()}:${date.getMinutes()}`
+const currentDate = `${date.getDate()<10?'0'+date.getDate():date.getDate()}.${date.getMonth()<10?'0'+date.getMonth():date.getMonth()}.${date.getFullYear()} ${date.getHours()<10?'0'+date.getHours():date.getHours()}:${date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()}`
 fetchReviews().then((res) => { createMarkUp(res) })
 
 console.log(date.getDate());
@@ -20,17 +19,29 @@ async function setReview(obj = {}) {
     method: "post", headers: {
       'Content-Type': 'application/json'
     }, body: JSON.stringify(obj)
+  }).catch((err)=>{
+throw err
   })
 }
 
+function setClass() {
+  setTimeout(() => {
+    btn.classList.remove('reviews-btn--success')
+  btn.textContent='Відправити відгук'
+  }, 3000);
+  
+}
 
 
 async function onSubmit(e) {
   e.preventDefault()
-  const obj = { name: e.target.name.value, email: e.target.email.value,
+  const obj = { name: e.target.name.value, 
      message: e.target.message.value, date: currentDate }
   await setReview(obj)
   await fetchReviews().then(res => createMarkUp(res))
+  btn.classList.add('reviews-btn--success')
+  btn.textContent='Успішно!'
+  setClass()
   form.reset()
 }
 
@@ -48,7 +59,7 @@ function createMarkUp(res) {
     <div class="reviews-item-wrap">
         <h5 class="reviews-name" >${el.name}</h5>
         <p class="reviews-date">${el.date}</p> 
-        <p class="reviews-email">${el.email}</p>
+        
     </div> 
     <p class="reviews-message">${el.message}</p>
     
