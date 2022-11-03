@@ -968,14 +968,12 @@ input[type=range] {
   }
   .about-contacts {
     margin-top: 50px;
-    margin-bottom: 75px;
     padding-top: 5px;
     display: flex;
     gap: 100px;
     align-items: center;
     justify-content: center;
-    border-bottom: 3px solid white;
-    padding-bottom: 50px;
+    margin-bottom: 75px;
     width: 88%;
   }
   .about-contacts_link {
@@ -1025,7 +1023,8 @@ input[type=range] {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    height: 800px;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 50px;
     background-color: transparent;
     border: 1px solid #ffffff;
     border-top: none;
@@ -1037,14 +1036,15 @@ input[type=range] {
   .reviews-title {
     color: white;
     margin: 100px 0;
-    font-size: 45px;
+    margin-bottom: 50px;
+    font-size: 37px;
     font-weight: 600;
   }
   .reviews-form {
     display: flex;
     height: 80px;
     align-items: center;
-    width: 600px;
+    width: 800px;
   }
   .reviews-form-wrap {
     display: flex;
@@ -1054,11 +1054,11 @@ input[type=range] {
   .reviews-input {
     height: 35px;
     text-align: center;
-    outline: 1px solid white;
     background-color: transparent;
     border-radius: 15px;
     color: white;
     border: none;
+    box-shadow: 0 0 10px 0px #8ba0ad;
   }
   .reviews-input:last-child {
     margin-top: 10px;
@@ -1066,6 +1066,11 @@ input[type=range] {
   .reviews-input::placeholder {
     color: white;
     vertical-align: middle;
+  }
+  .reviews-input:focus {
+    border-color: transparent;
+    outline-color: transparent;
+    border: none;
   }
   .reviews-input:focus::placeholder {
     color: transparent;
@@ -1075,13 +1080,15 @@ input[type=range] {
     text-align: center;
     vertical-align: middle;
     margin-right: 20px;
+    width: 400px;
+    box-shadow: 0 0 10px 0px #8ba0ad;
     color: white;
     height: 80px;
     resize: none;
   }
   .reviews-btn {
-    background-color: black;
-    height: 50px;
+    background-color: #6b6394;
+    height: 80px;
     color: white;
     cursor: pointer;
     border-radius: 15px;
@@ -1089,19 +1096,56 @@ input[type=range] {
     padding: 0 15px;
   }
   .reviews-btn:hover {
-    background-color: #453f3f;
+    box-shadow: 0 0 10px 2px #7f87c6;
   }
   .reviews-list {
+    box-shadow: 0 0 10px 0px #8ba0ad;
     margin-top: 50px;
     border-radius: 15px;
-    border: 1px solid white;
-    width: 600px;
+    width: 1100px;
     padding: 25px;
   }
+  .reviews-item {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+  }
   .reviews_icon {
-    width: 50px;
-    height: 50px;
-    fill: white;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    fill: #6b6394;
+  }
+  .reviews-item-wrap {
+    border-right: 1px solid white;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .reviews-name {
+    margin: 0;
+    color: white;
+  }
+  .reviews-date {
+    font-size: 12px;
+    color: white;
+  }
+  .reviews-email {
+    font-size: 13px;
+    color: white;
+  }
+  .reviews-message {
+    display: flex;
+    align-items: center;
+    color: #6b6394;
+    font-size: 15px;
+    padding: 0 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

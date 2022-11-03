@@ -290,28 +290,25 @@
             </ul>
         </section>
         <section class="reviews">
-            <h2 class="reviews-title">Відгуки</h2>
-            <form class="reviews-form" action="submit">
+            <h2 class="reviews-title">Додайте свій комментар, або дивіться іже існуючі.</h2>
+            <form class="reviews-form" id="reviews-form" >
                 <div class="reviews-form-wrap">
-                    <input class="reviews-input" required placeholder="Ім'я" type="text">
-                    <input class="reviews-input" required type="email" placeholder="Ел. почта">
+                    <input name="name" class="reviews-input" required placeholder="Ім'я" type="text">
+                    <input name="email" class="reviews-input" required type="email" placeholder="Ел. почта">
                 </div>
 
-                <textarea required placeholder="Відгук" aria-required name="message" class="reviews-input reviews_input--text" cols="30"
+                <textarea name="message" required placeholder="Відгук" aria-required name="message" class="reviews-input reviews_input--text" cols="30"
                     rows="10"></textarea>
                 <button class="reviews-btn" type="submit"> Відправити відгук</button>
                 
             </form>
             <ul class="reviews-list">
-                <li class="reviews-item">
-                    <svg class="reviews_icon">
-                        <use href="./images/symbol-defs.svg#icon-avatar"></use>
-                    </svg>  
-                </li>
+                
             </ul>
         </section>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js" type="module" > </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/questionsToggle.js"></script>
