@@ -109,15 +109,13 @@ input[type=range] {
 }
 
 ::-webkit-scrollbar-button:vertical:end:increment {
-  display: none;
   background-color: #1f5471;
   border-radius: 5px  5px 0 0;
+  display: none;
 }
 
 ::-webkit-scrollbar-button:horizontal:start:decrement {
-  background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #f6f8f4;
-  transform: rotate(180deg);
+  display: none;
 }
 
 ::-webkit-scrollbar-button:horizontal:end:increment {
@@ -862,23 +860,16 @@ input[type=range] {
 }
 
 .works-wrap {
-  height: 800px;
-  width: 600px;
-  overflow-y: scroll;
+  height: 860px;
+  width: 800px;
+  overflow-x: scroll;
+  display: flex;
 }
 
 .works-img {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.works-img:last-child {
-  margin: 0;
-}
-
-html, body {
-  /* толщина */
+  height: 800px;
+  width: 600px;
+  margin: 10px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

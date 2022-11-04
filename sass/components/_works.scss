@@ -24,21 +24,21 @@ margin-bottom: 50px;
 }
 
 .works-wrap{
-height: 800px;
-width: 600px;
-overflow-y: scroll;
+    
+height: 860px;
+width: 800px;
+overflow-x: scroll;
+display: flex;
 }
 .works-img{
-    height:100%;
-    width: 100%;
-    margin-bottom: 15px;
+    height: 800px;;
+    width: 600px;
+    margin: 10px;
 }
 .works-img:last-child{
-    margin: 0;
+    // margin: 0;
 }
-html, body {
-      /* толщина */
-}
+
 
 // ::-webkit-scrollbar-track {
 //     background: #250505; /* цвет фона у дорожки */
