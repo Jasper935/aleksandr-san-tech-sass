@@ -33,3 +33,19 @@ overflow-y: scroll;
     width: 100%;
     margin-bottom: 15px;
 }
+.works-img:last-child{
+    margin: 0;
+}
+html, body {
+      /* толщина */
+}
+
+// ::-webkit-scrollbar-track {
+//     background: #250505; /* цвет фона у дорожки */
+//     box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset; /* тень у дорожки */
+// }
+// .works-wrap::-webkit-scrollbar-thumb {
+//     background: #6f1515; /* цвет фона у дорожки */
+//     border-radius: 8px; /* скругление углов */
+//     border: 3px solid #f5cdcd; /* толщина, стиль и цвет рамки */
+// }

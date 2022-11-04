@@ -8,42 +8,45 @@
 
 body {
   font-family: Roboto;
+  /* Убираем внутренние отступы */
+  /* Убираем внешние отступы */
+  /* Выставляем основные настройки по-умолчанию для body */
 }
 
-/* Убираем внутренние отступы */
-ul,
-ol {
+body ul,
+body ol {
   padding: 0;
 }
 
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
+body body,
+body h1,
+body h2,
+body h3,
+body h4,
+body p,
+body ul,
+body ol,
+body li,
+body figure,
+body figcaption,
+body blockquote,
+body dl,
+body dd {
   margin: 0;
 }
 
-html {
+body html {
   scroll-behavior: smooth;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
-body {
+body body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  scrollbar-color: #458245 #714826;
+  /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: 5px;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -80,6 +83,45 @@ input[type=range] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  background-color: #b2d8e9;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #1f5471;
+  border-radius: 10px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #253861;
+}
+
+/* Стрелки */
+::-webkit-scrollbar-button:vertical:start:decrement {
+  background-color: #1f5471;
+  display: none;
+  border-radius: 0 0 5px  5px;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  display: none;
+  background-color: #1f5471;
+  border-radius: 5px  5px 0 0;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+  background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+  transform: rotate(180deg);
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+  display: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -829,6 +871,14 @@ input[type=range] {
   height: 100%;
   width: 100%;
   margin-bottom: 15px;
+}
+
+.works-img:last-child {
+  margin: 0;
+}
+
+html, body {
+  /* толщина */
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
