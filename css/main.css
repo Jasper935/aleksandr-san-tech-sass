@@ -1196,10 +1196,10 @@ input[type=range] {
     color: white;
     border: none;
     box-shadow: 0 0 10px 0px #8ba0ad;
+    -webkit-box-shadow: 0 0 10px 0px #8ba0ad;
   }
   .reviews-input::placeholder {
     color: white;
-    vertical-align: middle;
   }
   .reviews-input:focus {
     border-color: transparent;
@@ -1216,6 +1216,7 @@ input[type=range] {
     height: 100px;
     width: 280px;
     box-shadow: 0 0 10px 0px #8ba0ad;
+    -webkit-box-shadow: 0 0 10px 0px #8ba0ad;
     color: white;
     resize: none;
   }
