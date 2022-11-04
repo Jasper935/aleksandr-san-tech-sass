@@ -1,323 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- //swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="icon" href="./images/favicon.ico" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Roboto:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- //swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Roboto:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Сантехніка</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header class="header">
-            <div class="header-left_side">
-                <img src="./images/log.png" alt="logo" class="logo" />
-                <h3 class="header-title"><span class="header-title--bot"> УкрБудГарант</span></h3>
-            </div>
-            <nav class="nav">
-                <ul class="nav-list">
-
-                    <li class="nav-item"><a class="nav-link" href="#prices">ПОСЛУГИ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#prices">ЦІНИ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">ВІДГУКИ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">ПРО НАС</a></li>
-                </ul>
-            </nav>
-
-            <div class="contacts">
-                <a class="contacts_link" href="tel:+380672779112">
-                    <svg class="tel_icon" width="25" height="25">
-                        <use href="./images/symbol-defs.svg#icon-tel"></use>
-                    </svg> +38 (067) 277-91-12 </a>
-                <a class="contacts_link" href="mailto:grygoruk.aa@gmail.com">
-                    <svg class="tel_icon" width="25" height="25">
-                        <use href="./images/symbol-defs.svg#icon-mail"></use>
-                    </svg> grygoruk.aa@gmail.com </a>
-            </div>
-
-        </header>
-        <div class="header-bar">
-            <ul class="bar-list">
-                <li class="bar-item"><svg class="bar_icon">
-                        <use href="./images/symbol-defs.svg#icon-mark"></use>
-                    </svg><span class="bar_text">Швидко</span></li>
-                <li class="bar-item"><svg class="bar_icon">
-                        <use href="./images/symbol-defs.svg#icon-mark"></use>
-                    </svg><span class="bar_text">Якісно</span></li>
-                <li class="bar-item"><svg class="bar_icon">
-                        <use href="./images/symbol-defs.svg#icon-mark"></use>
-                    </svg><span class="bar_text">Приємна ціна</span></li>
-            </ul>
-            <h5 class="bar-title">Соціальні мережі:</h5>
-            <ul class="bar-socials_list">
-                <li class="bar-socials_item">
-                    <a target="_blank" class="bar-socials_link"
-                        href="https://instagram.com/_a.grygoruk_?igshid=YmMyMTA2M2Y="><svg fill="#e4405f"
-                            class="bar-socials_icon">
-                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                        </svg></a>
-                </li>
-                <li class="bar-socials_item">
-                    <a target="_blank" class="bar-socials_link" href="https://t.me/bugevuge_aa"><svg
-                            class="bar-socials_icon">
-                            <use href="./images/symbol-defs.svg#icon-telegram"></use>
-                        </svg></a>
-                </li>
-                <li class="bar-socials_item">
-                    <a target="_blank" class="bar-socials_link" href="viber://chat?number=%2B380672779112">
-                        <svg fill="#665cac" class="bar-socials_icon">
-                            <use href="./images/symbol-defs.svg#icon-viber"></use>
-                        </svg></a>
-                </li>
-                <li class="bar-socials_item">
-                    <a target="_blank" class="bar-socials_link" href="https://wa.me/380672779112"><svg fill="#25d366"
-                            class="bar-socials_icon">
-                            <use href="./images/symbol-defs.svg#icon-whatsapp"></use>
-                        </svg></a>
-                </li>
-
-
-            </ul>
+      <header class="header">
+        <div class="header-left_side">
+          <img src="./images/log.png" alt="logo" class="logo" />
+          <h3 class="header-title">
+            <span class="header-title--bot"> УкрБудГарант</span>
+          </h3>
         </div>
-        <section class="hero">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img class="swiper-img" src="./images/slide1.JPG" alt="slide1">
-                        <h4 class="swiper-subtitle">Монтаж опалення</h4>
-                    </div>
-                    <div class="swiper-slide"> <img class="swiper-img" src="./images/ss.JPG" alt="slide2">
-                        <h4 class="swiper-subtitle">Водопровід, каналізація</h4>
-                    </div>
-                    <div class="swiper-slide"><img class="swiper-img" src="./images/slide4.JPG" alt="slide3">
-                        <h4 class="swiper-subtitle">Тепла підлога</h4>
-                    </div>
-                    <div class="swiper-slide"><img class="swiper-img" src="./images/slide3.JPG" alt="slide4">
-                        <h4 class="swiper-subtitle">Монтаж сантехніки</h4>
-                    </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#prices">ПОСЛУГИ ТА ЦІНИ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ПРО НАС</a>
+            </li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#prices">ЦІНИ</a></li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">ВІДГУКИ</a>
+            </li>
+          </ul>
+        </nav>
 
-                </div>
-
-                <div class="swiper-pagination"></div>
-
+        <div class="contacts">
+          <a class="contacts_link" href="tel:+380672779112">
+            <svg class="tel_icon" width="25" height="25">
+              <use href="./images/symbol-defs.svg#icon-tel"></use>
+            </svg>
+            +38 (067) 277-91-12
+          </a>
+          <a class="contacts_link" href="mailto:grygoruk.aa@gmail.com">
+            <svg class="tel_icon" width="25" height="25">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            grygoruk.aa@gmail.com
+          </a>
+        </div>
+      </header>
+      <div class="header-bar">
+        <ul class="bar-list">
+          <li class="bar-item">
+            <svg class="bar_icon">
+              <use href="./images/symbol-defs.svg#icon-mark"></use></svg
+            ><span class="bar_text">Швидко</span>
+          </li>
+          <li class="bar-item">
+            <svg class="bar_icon">
+              <use href="./images/symbol-defs.svg#icon-mark"></use></svg
+            ><span class="bar_text">Якісно</span>
+          </li>
+          <li class="bar-item">
+            <svg class="bar_icon">
+              <use href="./images/symbol-defs.svg#icon-mark"></use></svg
+            ><span class="bar_text">Приємна ціна</span>
+          </li>
+        </ul>
+        <h5 class="bar-title">Соціальні мережі:</h5>
+        <ul class="bar-socials_list">
+          <li class="bar-socials_item">
+            <a
+              target="_blank"
+              class="bar-socials_link"
+              href="https://instagram.com/_a.grygoruk_?igshid=YmMyMTA2M2Y="
+              ><svg fill="#e4405f" class="bar-socials_icon">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="bar-socials_item">
+            <a
+              target="_blank"
+              class="bar-socials_link"
+              href="https://t.me/bugevuge_aa"
+              ><svg class="bar-socials_icon">
+                <use href="./images/symbol-defs.svg#icon-telegram"></use></svg
+            ></a>
+          </li>
+          <li class="bar-socials_item">
+            <a
+              target="_blank"
+              class="bar-socials_link"
+              href="viber://chat?number=%2B380672779112"
+            >
+              <svg fill="#665cac" class="bar-socials_icon">
+                <use href="./images/symbol-defs.svg#icon-viber"></use></svg
+            ></a>
+          </li>
+          <li class="bar-socials_item">
+            <a
+              target="_blank"
+              class="bar-socials_link"
+              href="https://wa.me/380672779112"
+              ><svg fill="#25d366" class="bar-socials_icon">
+                <use href="./images/symbol-defs.svg#icon-whatsapp"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <section class="hero">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./images/slide1.JPG" alt="slide1" />
+              <h4 class="swiper-subtitle">Монтаж опалення</h4>
             </div>
-
-        </section>
-        <section id="prices" class="services">
-            <h2 class="services-title">Послуги та ціни</h2>
-            <ul class="service-list">
-                <li class="service-item">
-                    <p class="service-name">Виїзд сантехніка</p><span class="service-price">безкоштовно</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Монтаж опалення</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Заміна батарей опалення</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Сантехнічні роботи</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Встановлення лічильників води</p><span class="service-price">від
-                        500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Встановлення ванни</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Встановлення душової кабіни</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Встановлення унітазу</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Встановлення раковини у ванній</p><span class="service-price">від
-                        500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Встановлення мийки на кухні</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Встановлення змішувача</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Встановлення рушникосушки</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Монтаж труб</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Монтаж каналізації</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Заміна стояка каналізації</p><span class="service-price">від 500грн</span>
-                </li>
-                <li class="service-item">
-                    <p class="service-name">Прочищення каналізації</p><span class="service-price">від 500грн</span>
-                </li>
-
-            </ul>
-        </section>
-        <section class="questions">
-            <h2 class="questions-title">Питання та відповіді</h2>
-            <ul class="questions-list">
-                <li class="questions-item">
-                    <h5 class="questions-subtitle">Як відбувається оплата, чи можна оплатити на карту?</h5>
-                    <p id="text0" class=" questions-text questions-text--hidden">Оплата відбувається після виконання
-                        замовлення, оплатити можна готівкою або
-                        картою.</p>
-                    <button id="btn0" class="questions-btn">
-                        <svg class="questions-icon">
-                            <use href="./images/symbol-defs.svg#icon-x"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="questions-item">
-                    <h5 class="questions-subtitle">Як швидко майстер може приїхати?</h5>
-                    <p id="text1" class="questions-text questions-text--hidden">Якщо є вільні майстри, то протягом 1-2
-                        годин.
-                    </p>
-                    <button id="btn1" class="questions-btn">
-                        <svg class="questions-icon">
-                            <use href="./images/symbol-defs.svg#icon-x"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="questions-item">
-                    <h5 class="questions-subtitle">Майстер має з собою інструменти і матеріали для роботи? </h5>
-                    <p id="text2" class="questions-text questions-text--hidden">Майстер має інструменти з собою,
-                        матеріали для роботи узгоджуються на місці при очній зустрічі.
-                    </p>
-                    <button id="btn2" class="questions-btn">
-                        <svg class="questions-icon">
-                            <use href="./images/symbol-defs.svg#icon-x"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="questions-item">
-                    <h5 class="questions-subtitle">Можу я прислати майстру фото в Viber Telegram для консультації ?</h5>
-                    <p id="text3" class="questions-text questions-text--hidden">Так, звичайно, всі посилання на соцальні
-                        мережі і контакти є в шапці сайту.
-                    </p>
-                    <button id="btn3" class="questions-btn">
-                        <svg class="questions-icon">
-                            <use href="./images/symbol-defs.svg#icon-x"></use>
-                        </svg>
-                    </button>
-                </li </ul>
-        </section>
-        <section id="about" class="about">
-            <h2 class="about-title">Про нас</h2>
-            <ul class="about-list">
-                <li class="about-item">
-                    <h4 class="about-subtitle">Графік роботи:</h4>
-                    <p class="about_range">09:00 - 20:00</p>
-                    <p class="about_range">Понеділок - Субота</p>
-                    <svg class="about_icon">
-                        <use href="./images/symbol-defs.svg#icon-time"></use>
-                    </svg>
-                </li>
-                <li class="about-item">
-                    <h4 class="about-subtitle">Зона обслуговування:</h4>
-                    <p class="about_range">Київ, Київська обл.</p>
-
-                    <svg class="about_icon">
-                        <use href="./images/symbol-defs.svg#icon-location"></use>
-                    </svg>
-                </li>
-                <li class="about-item">
-                    <h4 class="about-subtitle">Досвід:</h4>
-                    <p class="about_range"></p>
-                    <p class="about_range">Компанія обслуговує кліентів з 2015 року. </p>
-                    <svg class="about_icon">
-                        <use href="./images/symbol-defs.svg#icon-hands"></use>
-                    </svg>
-                </li>
-
-            </ul>
-
-            <div class="about-persons">
-                <p class="about-persons_name">Контактна особа: </p>
-                <p class="about-person">Олександр Григорук</p>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./images/ss.JPG" alt="slide2" />
+              <h4 class="swiper-subtitle">Водопровід, каналізація</h4>
             </div>
-
-            <div class="about-contacts">
-                <a class="about-contacts_link" href="tel:+380672779112">
-                    <svg class="about-contacts_icon" width="25" height="25">
-                        <use href="./images/symbol-defs.svg#icon-tel"></use>
-                    </svg> +38 (067) 277-91-12 </a>
-                <a class="about-contacts_link" href="mailto:grygoruk.aa@gmail.com">
-                    <svg class="about-contacts_icon" width="25" height="25">
-                        <use href="./images/symbol-defs.svg#icon-mail1"></use>
-                    </svg> grygoruk.aa@gmail.com </a>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./images/slide4.JPG" alt="slide3" />
+              <h4 class="swiper-subtitle">Тепла підлога</h4>
             </div>
-            <ul class="about-socials_list">
-                <li class="about-socials_item">
-                    <a target="_blank" class="about-socials_link"
-                        href="https://instagram.com/_a.grygoruk_?igshid=YmMyMTA2M2Y="><svg class="about-socials_icon">
-                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                        </svg></a>
-                </li>
-                <li class="about-socials_item">
-                    <a target="_blank" class="about-socials_link" href="https://t.me/bugevuge_aa"><svg
-                            class="about-socials_icon">
-                            <use href="./images/symbol-defs.svg#icon-telegram"></use>
-                        </svg></a>
-                </li>
-                <li class="about-socials_item">
-                    <a target="_blank" class="about-socials_link" href="viber://chat?number=%2B380672779112">
-                        <svg class="about-socials_icon">
-                            <use href="./images/symbol-defs.svg#icon-viber"></use>
-                        </svg></a>
-                </li>
-                <li class="about-socials_item">
-                    <a target="_blank" class="about-socials_link" href="https://wa.me/380672779112">
-                        <svg class="about-socials_icon">
-                            <use href="./images/symbol-defs.svg#icon-whatsapp"></use>
-                        </svg></a>
-                </li>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./images/slide3.JPG" alt="slide4" />
+              <h4 class="swiper-subtitle">Монтаж сантехніки</h4>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section id="prices" class="services">
+        <h2 class="services-title">Послуги та ціни</h2>
+        <ul class="service-list">
+          <li class="service-item">
+            <p class="service-name">Виїзд сантехніка</p>
+            <span class="service-price">безкоштовно</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Монтаж опалення</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Заміна батарей опалення</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Сантехнічні роботи</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Встановлення лічильників води</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Встановлення ванни</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Встановлення душової кабіни</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Встановлення унітазу</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Встановлення раковини у ванній</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Встановлення мийки на кухні</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Встановлення змішувача</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Встановлення рушникосушки</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Монтаж труб</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Монтаж каналізації</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Заміна стояка каналізації</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+          <li class="service-item">
+            <p class="service-name">Прочищення каналізації</p>
+            <span class="service-price">від 500грн</span>
+          </li>
+        </ul>
+      </section>
+      <section class="questions">
+        <h2 class="questions-title">Питання та відповіді</h2>
+        <ul class="questions-list">
+          <li class="questions-item">
+            <h5 class="questions-subtitle">
+              Як відбувається оплата, чи можна оплатити на карту?
+            </h5>
+            <p id="text0" class="questions-text questions-text--hidden">
+              Оплата відбувається після виконання замовлення, оплатити можна
+              готівкою або картою.
+            </p>
+            <button id="btn0" class="questions-btn">
+              <svg class="questions-icon">
+                <use href="./images/symbol-defs.svg#icon-x"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="questions-item">
+            <h5 class="questions-subtitle">Як швидко майстер може приїхати?</h5>
+            <p id="text1" class="questions-text questions-text--hidden">
+              Якщо є вільні майстри, то протягом 1-2 годин.
+            </p>
+            <button id="btn1" class="questions-btn">
+              <svg class="questions-icon">
+                <use href="./images/symbol-defs.svg#icon-x"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="questions-item">
+            <h5 class="questions-subtitle">
+              Майстер має з собою інструменти і матеріали для роботи?
+            </h5>
+            <p id="text2" class="questions-text questions-text--hidden">
+              Майстер має інструменти з собою, матеріали для роботи узгоджуються
+              на місці при очній зустрічі.
+            </p>
+            <button id="btn2" class="questions-btn">
+              <svg class="questions-icon">
+                <use href="./images/symbol-defs.svg#icon-x"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="questions-item">
+            <h5 class="questions-subtitle">
+              Можу я прислати майстру фото в Viber Telegram для консультації ?
+            </h5>
+            <p id="text3" class="questions-text questions-text--hidden">
+              Так, звичайно, всі посилання на соцальні мережі і контакти є в
+              шапці сайту.
+            </p>
+            <button id="btn3" class="questions-btn">
+              <svg class="questions-icon">
+                <use href="./images/symbol-defs.svg#icon-x"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="works">
+ <h2 class="works-title">Фото виконаних робіт</h2>
 
 
-            </ul>
-        </section>
-        <section class="reviews">
-            <h2 class="reviews-title">Додайте свій комментар, або дивіться вже існуючі.</h2>
-            <form class="reviews-form" id="reviews-form" >
-                
-                    <input name="name" class="reviews-input" required placeholder="Ім'я" type="text">
-                    
-                
+      </section>
 
-                <textarea name="message" required placeholder="Відгук" aria-required name="message" class="reviews-input reviews_input--text" cols="30"
-                    rows="10"></textarea>
-                <button class="reviews-btn" type="submit"> Відправити відгук</button>
-                
-            </form>
-            <ul class="reviews-list">
-                
-            </ul>
-        </section>
+      <section id="about" class="about">
+        <h2 class="about-title">Про нас</h2>
+        <ul class="about-list">
+          <li class="about-item">
+            <h4 class="about-subtitle">Графік роботи:</h4>
+            <p class="about_range">09:00 - 20:00</p>
+            <p class="about_range">Понеділок - Субота</p>
+            <svg class="about_icon">
+              <use href="./images/symbol-defs.svg#icon-time"></use>
+            </svg>
+          </li>
+          <li class="about-item">
+            <h4 class="about-subtitle">Зона обслуговування:</h4>
+            <p class="about_range">Київ, Київська обл.</p>
+
+            <svg class="about_icon">
+              <use href="./images/symbol-defs.svg#icon-location"></use>
+            </svg>
+          </li>
+          <li class="about-item">
+            <h4 class="about-subtitle">Досвід:</h4>
+            <p class="about_range"></p>
+            <p class="about_range">Компанія обслуговує кліентів з 2015 року.</p>
+            <svg class="about_icon">
+              <use href="./images/symbol-defs.svg#icon-hands"></use>
+            </svg>
+          </li>
+        </ul>
+
+        <div class="about-persons">
+          <p class="about-persons_name">Контактна особа:</p>
+          <p class="about-person">Олександр Григорук</p>
+        </div>
+
+        <div class="about-contacts">
+          <a class="about-contacts_link" href="tel:+380672779112">
+            <svg class="about-contacts_icon" width="25" height="25">
+              <use href="./images/symbol-defs.svg#icon-tel"></use>
+            </svg>
+            +38 (067) 277-91-12
+          </a>
+          <a class="about-contacts_link" href="mailto:grygoruk.aa@gmail.com">
+            <svg class="about-contacts_icon" width="25" height="25">
+              <use href="./images/symbol-defs.svg#icon-mail1"></use>
+            </svg>
+            grygoruk.aa@gmail.com
+          </a>
+        </div>
+        <ul class="about-socials_list">
+          <li class="about-socials_item">
+            <a
+              target="_blank"
+              class="about-socials_link"
+              href="https://instagram.com/_a.grygoruk_?igshid=YmMyMTA2M2Y="
+              ><svg class="about-socials_icon">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="about-socials_item">
+            <a
+              target="_blank"
+              class="about-socials_link"
+              href="https://t.me/bugevuge_aa"
+              ><svg class="about-socials_icon">
+                <use href="./images/symbol-defs.svg#icon-telegram"></use></svg
+            ></a>
+          </li>
+          <li class="about-socials_item">
+            <a
+              target="_blank"
+              class="about-socials_link"
+              href="viber://chat?number=%2B380672779112"
+            >
+              <svg class="about-socials_icon">
+                <use href="./images/symbol-defs.svg#icon-viber"></use></svg
+            ></a>
+          </li>
+          <li class="about-socials_item">
+            <a
+              target="_blank"
+              class="about-socials_link"
+              href="https://wa.me/380672779112"
+            >
+              <svg class="about-socials_icon">
+                <use href="./images/symbol-defs.svg#icon-whatsapp"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews" id="reviews">
+        <h2 class="reviews-title">
+          Додайте свій комментар, або дивіться вже існуючі.
+        </h2>
+        <form class="reviews-form" id="reviews-form">
+          <input
+            name="name"
+            class="reviews-input"
+            required
+            placeholder="Ім'я"
+            type="text"
+          />
+
+          <textarea
+            name="message"
+            required
+            placeholder="Відгук"
+            class="reviews-input reviews_input--text"
+          ></textarea>
+          <button class="reviews-btn" type="submit">Відправити відгук</button>
+        </form>
+        <ul class="reviews-list"></ul>
+        <button class="more-btn">більше відгуків...</button>
+      </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="index.js" type="module" > </script>
+    <script src="index.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/questionsToggle.js"></script>
-</body>
-
+  </body>
 </html>

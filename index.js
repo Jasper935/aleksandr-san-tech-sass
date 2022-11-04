@@ -3,11 +3,17 @@ const list = document.querySelector('.reviews-list')
 const form = document.querySelector("#reviews-form")
 form.addEventListener('submit', onSubmit)
 const btn = document.querySelector('.reviews-btn')
-const date =new Date()
-const currentDate = `${date.getDate()<10?'0'+date.getDate():date.getDate()}.${date.getMonth()<10?'0'+date.getMonth():date.getMonth()}.${date.getFullYear()} ${date.getHours()<10?'0'+date.getHours():date.getHours()}:${date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()}`
-fetchReviews().then((res) => { createMarkUp(res) })
+const moreBtn = document.querySelector('.more-btn')
+moreBtn.addEventListener('click', onClick)
+const date = new Date()
+const currentDate = `${date.getDate() < 10 ? '0' + date.getDate() : date.getDate()}.${date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()}.${date.getFullYear()} ${date.getHours() < 10 ? '0' + date.getHours() : date.getHours()}:${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()}`
 
-console.log(date.getDate());
+let startIndex = 0
+let endIndex = 10
+
+fetchReviews().then((res) => { createMarkUp(res, true) })
+
+
 async function fetchReviews() {
   return await fetch('https://6348b82ea59874146b0f8c0a.mockapi.io/reviews').then((res) => res.json())
 }
@@ -19,39 +25,49 @@ async function setReview(obj = {}) {
     method: "post", headers: {
       'Content-Type': 'application/json'
     }, body: JSON.stringify(obj)
-  }).catch((err)=>{
-throw err
+  }).catch((err) => {
+    throw err
   })
 }
 
 function setClass() {
   setTimeout(() => {
     btn.classList.remove('reviews-btn--success')
-  btn.textContent='Відправити відгук'
+    btn.textContent = 'Відправити відгук'
   }, 3000);
-  
+
 }
 
 
 async function onSubmit(e) {
   e.preventDefault()
-  const obj = { name: e.target.name.value, 
-     message: e.target.message.value, date: currentDate }
+  const obj = {
+    name: e.target.name.value,
+    message: e.target.message.value, date: currentDate
+  }
   await setReview(obj)
-  await fetchReviews().then(res => createMarkUp(res))
+  await fetchReviews().then(res => createMarkUp(res, true))
   btn.classList.add('reviews-btn--success')
-  btn.textContent='Успішно!'
+  btn.textContent = 'Успішно!'
   setClass()
   form.reset()
+  moreBtn.textContent = 'більше відгуків...'
+}
+function onClick() {
+  startIndex += 10
+  endIndex += 10
+  fetchReviews().then(res => createMarkUp(res))
 }
 
 
 
+function createMarkUp(res, deleteLastMarkUp = false) {
 
-function createMarkUp(res) {
+  const newRes = res.reverse().filter((el, i) => i >= startIndex && i < endIndex)
 
+  
 
-  const markUp = res.map(el =>
+  const markUp = newRes.map((el, i) =>
     `<li class="reviews-item">
     <svg class="reviews_icon">
         <use href="./images/symbol-defs.svg#icon-avatar"></use>
@@ -63,9 +79,18 @@ function createMarkUp(res) {
     </div> 
     <p class="reviews-message">${el.message}</p>
     
-</li>`).reverse().join('')
-
-  list.innerHTML = markUp
-  // const lightbox = new SimpleLightbox('.gallery a', { /* options */ });
-
+</li>`).join('')
+  if (deleteLastMarkUp) {
+    list.innerHTML = markUp
+    return
+  }
+  
+  list.insertAdjacentHTML('beforeend', markUp)
+  if (!newRes.length) {
+    moreBtn.textContent = 'Це все'
+    startIndex = 0
+  endIndex = 10
+    return
+  }
+  
 }

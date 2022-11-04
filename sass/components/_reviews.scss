@@ -59,7 +59,7 @@ margin-bottom: 50px;
   }
   .reviews_input--text {
     text-align: center;
-    
+    padding: 7px 0;
     margin-right: 25px;
     width: 400px;
     box-shadow: 0 0 10px 0px #8ba0ad;
@@ -142,5 +142,14 @@ margin-bottom: 50px;
     padding: 0 15px;
   width: 880px;
 
+  }
+  .more-btn{
+    cursor: pointer;
+    margin-top: 25px;
+    padding:5px 10px;
+    border: none;
+    background-color: #6b6394;
+    color: white;
+    box-shadow: 0 0 10px 0px #8ba0ad;
   }
 }

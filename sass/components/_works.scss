@@ -1,0 +1,24 @@
+.works{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+height: 500px;
+    padding-bottom: 50px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.works-title{
+    color: white;
+
+    margin: 100px 0;
+margin-bottom: 50px;
+    font-size: 37px;
+    font-weight: 600;
+}

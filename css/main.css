@@ -797,6 +797,29 @@ input[type=range] {
   }
 }
 
+.works {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 500px;
+  padding-bottom: 50px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.works-title {
+  color: white;
+  margin: 100px 0;
+  margin-bottom: 50px;
+  font-size: 37px;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .about {
     margin-left: auto;
@@ -1086,6 +1109,7 @@ input[type=range] {
   }
   .reviews_input--text {
     text-align: center;
+    padding: 7px 0;
     margin-right: 25px;
     width: 400px;
     box-shadow: 0 0 10px 0px #8ba0ad;
@@ -1159,6 +1183,15 @@ input[type=range] {
     font-size: 15px;
     padding: 0 15px;
     width: 880px;
+  }
+  .more-btn {
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #6b6394;
+    color: white;
+    box-shadow: 0 0 10px 0px #8ba0ad;
   }
 }
 /*# sourceMappingURL=main.css.map */
