@@ -43,8 +43,7 @@ text-align: center;
     margin-bottom: 25px;
     color: white;
     border: none;
-    box-shadow: 0 0 10px 0px #8ba0ad;
-    -webkit-box-shadow: 0 0 10px 0px #8ba0ad;
+    border: 1px solid white;
   }
 
   .reviews-input::placeholder {
@@ -65,8 +64,7 @@ text-align: center;
     padding: 7px 0;
     height: 100px;
     width: 280px;
-    box-shadow: 0 0 10px 0px #8ba0ad;
-    -webkit-box-shadow: 0 0 10px 0px #8ba0ad;
+   
     color: white;
     
     resize: none;
