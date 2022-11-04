@@ -820,8 +820,8 @@ input[type=range] {
 }
 
 .works-wrap {
-  height: 1100px;
-  width: 900px;
+  height: 800px;
+  width: 600px;
   overflow-y: scroll;
 }
 
