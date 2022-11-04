@@ -861,16 +861,27 @@ input[type=range] {
 }
 
 .works-wrap {
+  box-shadow: 0 0 10px 0px #8ba0ad;
   height: 860px;
-  width: 800px;
+  width: 600px;
   overflow-x: scroll;
   display: flex;
+  border-radius: 10px;
 }
 
 .works-img {
   height: 800px;
   width: 600px;
   margin: 10px;
+  margin-left: 50px;
+}
+
+.works-img:last-child {
+  margin-right: 0;
+}
+
+.works-img:first-child {
+  margin-left: 0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
