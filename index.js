@@ -15,7 +15,9 @@ fetchReviews().then((res) => { createMarkUp(res, true) })
 
 
 async function fetchReviews() {
-  return await fetch('https://6348b82ea59874146b0f8c0a.mockapi.io/reviews').then((res) => res.json())
+  return await fetch('https://6348b82ea59874146b0f8c0a.mockapi.io/reviews').then((res) => res.json()).catch((err) => {
+    alert(err)
+  })
 }
 
 
@@ -26,7 +28,7 @@ async function setReview(obj = {}) {
       'Content-Type': 'application/json'
     }, body: JSON.stringify(obj)
   }).catch((err) => {
-    throw err
+    alert(err)
   })
 }
 
@@ -54,6 +56,9 @@ async function onSubmit(e) {
   moreBtn.textContent = 'більше відгуків...'
 }
 function onClick() {
+  if(moreBtn.textContent==='Це все'){
+    return
+  }
   startIndex += 10
   endIndex += 10
   fetchReviews().then(res => createMarkUp(res))
