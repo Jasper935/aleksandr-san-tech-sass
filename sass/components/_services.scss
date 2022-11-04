@@ -3,14 +3,14 @@
     
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 100vw;
    padding-bottom: 100px;
     background-color: transparent;
     border: 1px solid #ffffff;
-    border-top: none;
+   
   
     display: flex;
-    display: none;
+   
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -18,33 +18,35 @@
   }
   .services-title {
     color: #255171;
-    margin: 100px 0;
-    font-size: 45px;
+    margin: 50px 0;
+    font-size: 25px;
     font-weight: 600;
   }
   .service-list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   
     padding: 50px 20px;
-    width: 800px;
+    
     border-radius: 10px;
     box-shadow: 0 0 10px 2px #a4a6b2;
   }
   .service-item {
     display: flex;
-    width: 700px;
+    width: 100%;
     border-bottom: 1px solid white;
     margin-top: 15px;
   }
   .service-name {
     color: #2d2d6e;
-    font-size: 20px;
+    font-size: 12px;
   }
   .service-price {
     color: #255171;
     margin-left: auto;
+    font-size: 12px;
   }
   
 }

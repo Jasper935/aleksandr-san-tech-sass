@@ -1,15 +1,17 @@
+
+@media screen and (min-width: 320px)  and (max-width: 768px){
 .works{
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-// height: 500px;
+
     padding-bottom: 50px;
     background-color: transparent;
     border: 1px solid #ffffff;
     border-top: none;
 
     display: flex;
-
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -45,12 +47,58 @@ border-radius: 10px;
     margin-left: 0;
 }
 
-// ::-webkit-scrollbar-track {
-//     background: #250505; /* цвет фона у дорожки */
-//     box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset; /* тень у дорожки */
-// }
-// .works-wrap::-webkit-scrollbar-thumb {
-//     background: #6f1515; /* цвет фона у дорожки */
-//     border-radius: 8px; /* скругление углов */
-//     border: 3px solid #f5cdcd; /* толщина, стиль и цвет рамки */
-// }
+
+}
+/* DESKPOT-----------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+
+    .works{
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+    // height: 500px;
+        padding-bottom: 50px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        border-top: none;
+    
+        display: flex;
+    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .works-title{
+        color: white;
+    
+        margin: 100px 0;
+    margin-bottom: 50px;
+        font-size: 37px;
+        font-weight: 600;
+    }
+    
+    .works-wrap{
+        box-shadow: 0 0 10px 0px #8ba0ad; 
+    height: 860px;
+    width: 600px;
+    overflow-x: scroll;
+    display: flex;
+    border-radius: 10px;
+    }
+    .works-img{
+        height: 800px;;
+        width: 600px;
+        margin: 10px;
+        margin-left: 50px;
+        
+    }
+    .works-img:last-child{
+        margin-right: 0;
+    }
+    .works-img:first-child{
+        margin-left: 0;
+    }
+
+
+}

@@ -1,17 +1,16 @@
-/* DESKPOT-----------------------------------------------------------------------------*/
-@media (min-width: 1200px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .reviews {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-   border-radius:  0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
     padding-bottom: 50px;
     background-color: transparent;
     border: 1px solid #ffffff;
     border-top: none;
 
     display: flex;
-
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -20,7 +19,7 @@
     color: white;
 
     margin: 100px 0;
-margin-bottom: 50px;
+    margin-bottom: 50px;
     font-size: 37px;
     font-weight: 600;
   }
@@ -30,25 +29,24 @@ margin-bottom: 50px;
     align-items: flex-start;
     width: 800px;
   }
-  
+
   .reviews-input {
     height: 40px;
     text-align: center;
     // outline: 1px solid white;
     background-color: transparent;
     border-radius: 15px;
-   margin-right: 25px;
+    margin-right: 25px;
     color: white;
     border: none;
     box-shadow: 0 0 10px 0px #8ba0ad;
   }
-  
+
   .reviews-input::placeholder {
     color: white;
     vertical-align: middle;
-   
   }
-  .reviews-input:focus{
+  .reviews-input:focus {
     border-color: transparent;
     outline-color: transparent;
     border: none;
@@ -67,7 +65,7 @@ margin-bottom: 50px;
     height: 80px;
     resize: none;
   }
- 
+
   .reviews-btn {
     background-color: #6b6394;
     height: 40px;
@@ -77,13 +75,12 @@ margin-bottom: 50px;
     border-radius: 15px;
     border: none;
     padding: 0 15px;
-    
   }
   .reviews-btn:hover {
     // background-color: rgb(69, 63, 63);
     box-shadow: 0 0 10px 2px #7f87c6;
   }
-  .reviews-btn--success{
+  .reviews-btn--success {
     background-color: #3fa67b;
   }
   //-------------------------------------------------------rev
@@ -103,13 +100,13 @@ margin-bottom: 50px;
     flex-direction: row;
     // height: 50px;
   }
-  .reviews-item-wrap{
+  .reviews-item-wrap {
     display: flex;
     align-items: center;
     text-align: center;
     border-right: 1px solid white;
     padding-right: 10px;
-   }
+  }
   .reviews_icon {
     position: absolute;
     left: 5px;
@@ -118,35 +115,183 @@ margin-bottom: 50px;
     width: 40px;
     height: 40px;
     fill: #6b6394;
-    
   }
 
   .reviews-name {
     margin: 0;
     color: white;
-    
   }
   .reviews-date {
     font-size: 12px;
     color: white;
   }
-  .reviews-email{
+  .reviews-email {
     font-size: 13px;
     color: white;
   }
-  .reviews-message{
-   display: flex;
-   align-items: center;
+  .reviews-message {
+    display: flex;
+    align-items: center;
     color: #6b6394;
     font-size: 15px;
     padding: 0 15px;
-  width: 880px;
-
+    width: 880px;
   }
-  .more-btn{
+  .more-btn {
     cursor: pointer;
     margin-top: 25px;
-    padding:5px 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #6b6394;
+    color: white;
+    box-shadow: 0 0 10px 0px #8ba0ad;
+  }
+}
+
+/* DESKPOT-----------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .reviews {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 50px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .reviews-title {
+    color: white;
+
+    margin: 100px 0;
+    margin-bottom: 50px;
+    font-size: 37px;
+    font-weight: 600;
+  }
+  .reviews-form {
+    display: flex;
+    height: 80px;
+    align-items: flex-start;
+    width: 800px;
+  }
+
+  .reviews-input {
+    height: 40px;
+    text-align: center;
+    // outline: 1px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    margin-right: 25px;
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px 0px #8ba0ad;
+  }
+
+  .reviews-input::placeholder {
+    color: white;
+    vertical-align: middle;
+  }
+  .reviews-input:focus {
+    border-color: transparent;
+    outline-color: transparent;
+    border: none;
+  }
+  .reviews-input:focus::placeholder {
+    color: transparent;
+    display: none;
+  }
+  .reviews_input--text {
+    text-align: center;
+    padding: 7px 0;
+    margin-right: 25px;
+    width: 400px;
+    box-shadow: 0 0 10px 0px #8ba0ad;
+    color: white;
+    height: 80px;
+    resize: none;
+  }
+
+  .reviews-btn {
+    background-color: #6b6394;
+    height: 40px;
+    width: 200px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    padding: 0 15px;
+  }
+  .reviews-btn:hover {
+    // background-color: rgb(69, 63, 63);
+    box-shadow: 0 0 10px 2px #7f87c6;
+  }
+  .reviews-btn--success {
+    background-color: #3fa67b;
+  }
+  //-------------------------------------------------------rev
+  .reviews-list {
+    box-shadow: 0 0 10px 0px #8ba0ad;
+    margin-top: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 1100px;
+    padding: 25px;
+  }
+  .reviews-item {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+    // height: 50px;
+  }
+  .reviews-item-wrap {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid white;
+    padding-right: 10px;
+  }
+  .reviews_icon {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    fill: #6b6394;
+  }
+
+  .reviews-name {
+    margin: 0;
+    color: white;
+  }
+  .reviews-date {
+    font-size: 12px;
+    color: white;
+  }
+  .reviews-email {
+    font-size: 13px;
+    color: white;
+  }
+  .reviews-message {
+    display: flex;
+    align-items: center;
+    color: #6b6394;
+    font-size: 15px;
+    padding: 0 15px;
+    width: 880px;
+  }
+  .more-btn {
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 5px 10px;
     border: none;
     background-color: #6b6394;
     color: white;
