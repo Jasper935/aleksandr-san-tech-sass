@@ -801,7 +801,6 @@ input[type=range] {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  height: 500px;
   padding-bottom: 50px;
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -818,6 +817,19 @@ input[type=range] {
   margin-bottom: 50px;
   font-size: 37px;
   font-weight: 600;
+}
+
+.swiper-bot-wrapper {
+  height: 1000px;
+  overflow-y: scroll;
+}
+
+.swiper-bot-slide {
+  margin-bottom: 15px;
+}
+
+.swiper-bot-img {
+  box-shadow: 0 0 10px 0px #8ba0ad;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

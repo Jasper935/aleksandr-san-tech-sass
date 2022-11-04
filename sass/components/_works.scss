@@ -2,7 +2,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-height: 500px;
+// height: 500px;
     padding-bottom: 50px;
     background-color: transparent;
     border: 1px solid #ffffff;
@@ -21,4 +21,19 @@ height: 500px;
 margin-bottom: 50px;
     font-size: 37px;
     font-weight: 600;
+}
+.swiper-bot{
+
+}
+.swiper-bot-wrapper{
+height: 1000px;
+overflow-y: scroll;
+}
+.swiper-bot-slide{
+margin-bottom: 15px;
+
+
+}
+.swiper-bot-img{
+    box-shadow: 0 0 10px 0px #8ba0ad;
 }
