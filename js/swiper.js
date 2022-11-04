@@ -47,14 +47,15 @@ const swiper = new Swiper(slider, {
         spaceBetween: 50,
         speed: 1500,
         slideToClickedSlide: true,
-        // grabCursor: true,
+        
         loop: true,
       },
     },
   });
 
 
-  const sliderBot = document.querySelector(".swiper");
+  const sliderBot = document.querySelector(".swiper-bot");
+  console.log(sliderBot);
 
 const swiperBot = new Swiper(sliderBot, {
     
