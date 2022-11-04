@@ -2,41 +2,44 @@
   .reviews {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 100vw;
     border-radius: 0 0 15px 15px;
+    // padding: 15px;
     padding-bottom: 50px;
     background-color: transparent;
     border: 1px solid #ffffff;
     border-top: none;
 
     display: flex;
-    display: none;
+    
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
   .reviews-title {
     color: white;
-
-    margin: 100px 0;
+text-align: center;
+    margin: 50px 0;
     margin-bottom: 50px;
-    font-size: 37px;
+    font-size: 25px;
     font-weight: 600;
   }
   .reviews-form {
     display: flex;
-    height: 80px;
-    align-items: flex-start;
-    width: 800px;
+    // height: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
   }
 
   .reviews-input {
     height: 40px;
     text-align: center;
-    // outline: 1px solid white;
+    width: 200px;
     background-color: transparent;
     border-radius: 15px;
-    margin-right: 25px;
+    margin-bottom: 25px;
     color: white;
     border: none;
     box-shadow: 0 0 10px 0px #8ba0ad;
@@ -58,8 +61,8 @@
   .reviews_input--text {
     text-align: center;
     padding: 7px 0;
-    margin-right: 25px;
-    width: 400px;
+    
+    width: 280px;
     box-shadow: 0 0 10px 0px #8ba0ad;
     color: white;
     height: 80px;
@@ -87,39 +90,43 @@
   .reviews-list {
     box-shadow: 0 0 10px 0px #8ba0ad;
     margin-top: 50px;
-    border-radius: 15px;
+    
     overflow: hidden;
-    width: 1100px;
-    padding: 25px;
+    width: 100%;
+    padding: 10px;
   }
   .reviews-item {
     margin-bottom: 25px;
     position: relative;
-    padding-left: 60px;
+    padding: 15px 0;
+    padding-left: 50px;
     display: flex;
-    flex-direction: row;
-    // height: 50px;
+    flex-direction: column;
+    border-bottom: 1px solid white;
   }
   .reviews-item-wrap {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     text-align: center;
-    border-right: 1px solid white;
-    padding-right: 10px;
+   
+   
+    margin-bottom: 10px;
   }
   .reviews_icon {
     position: absolute;
-    left: 5px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     fill: #6b6394;
   }
 
   .reviews-name {
     margin: 0;
     color: white;
+    margin-bottom: 5px;
   }
   .reviews-date {
     font-size: 12px;
@@ -134,8 +141,8 @@
     align-items: center;
     color: #6b6394;
     font-size: 15px;
-    padding: 0 15px;
-    width: 880px;
+    
+    // text-align: center;
   }
   .more-btn {
     cursor: pointer;
