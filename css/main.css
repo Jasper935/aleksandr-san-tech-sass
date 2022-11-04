@@ -984,8 +984,6 @@ input[type=range] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: 3px solid white;
-    padding-bottom: 50px;
     width: 100%;
   }
   .about-contacts_link {
