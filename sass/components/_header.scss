@@ -24,22 +24,11 @@
   }
   .header-title {
    display: none;
-    text-align: center;
-    margin-left: 0px;
-    // margin-top: 10px;
-    color: #ffffff;
-    font-size: 26px;
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 0 5px;
-    font-family: Caveat;
+   
   }
   .header-title--bot {
     display: none;
-    position: relative;
-    margin-top: -5px;
-    display: block;
-    align-items: center;
+    
   }
   //------------------------------------NAVIGATION-----------------------------
   .nav {
@@ -56,16 +45,14 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    // gap: 10px;
+   margin-left: 5px;
   }
   .nav-item {
     margin-right: 10px;
     
     
   }
-  .nav-item:last-child {
-    margin-right: 0px;
-  }
+  
   .nav-link {
     text-align: center;
     font-size: 11px;

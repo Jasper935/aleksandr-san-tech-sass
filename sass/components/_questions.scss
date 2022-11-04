@@ -3,15 +3,15 @@
   
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  height: 800px;
+  width: 100vw;
+  
 
   background-color: transparent;
   border: 1px solid #ffffff;
   border-top: none;
 
   display: flex;
-  display: none;
+  padding-bottom: 50px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -20,9 +20,9 @@
 .questions-title {
   color: white;
   
-  margin: 100px 0;
+  margin: 50px 0;
 //   margin-top: 100px;
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 600;
 }
 .questions-list {
@@ -39,16 +39,17 @@
   padding: 15px 0;
 }
 .questions-subtitle {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
   margin: 0;
+  padding-right: 40px;
 }
 
 .questions-text {
     margin-top: 10px;
   opacity: 1;
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 200;
   transition: all 0.1s ease;
   transform: scale(1);
@@ -66,7 +67,7 @@
   border: none;
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: -2px;
   width: 35px;
   height: 35px;
   padding: 0;
