@@ -560,7 +560,6 @@ input[type=range] {
     flex-direction: column;
     align-items: center;
     padding: 50px 20px;
-    border-radius: 10px;
     box-shadow: 0 0 10px 2px #a4a6b2;
   }
   .service-item {
@@ -818,37 +817,36 @@ input[type=range] {
   .works {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 100vw;
     padding-bottom: 50px;
     background-color: transparent;
     border: 1px solid #ffffff;
     border-top: none;
     display: flex;
-    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
   .works-title {
     color: white;
-    margin: 100px 0;
+    margin: 50px 0;
     margin-bottom: 50px;
-    font-size: 37px;
+    font-size: 25px;
     font-weight: 600;
   }
   .works-wrap {
     box-shadow: 0 0 10px 0px #8ba0ad;
-    height: 860px;
-    width: 600px;
+    width: 100%;
     overflow-x: scroll;
     display: flex;
     border-radius: 10px;
   }
   .works-img {
-    height: 800px;
-    width: 600px;
+    height: auto;
+    width: 100%;
     margin: 10px;
     margin-left: 50px;
+    padding: 5px;
   }
   .works-img:last-child {
     margin-right: 0;
