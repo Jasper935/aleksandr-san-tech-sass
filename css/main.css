@@ -445,7 +445,6 @@ input[type=range] {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    padding-bottom: 25px;
     background-color: transparent;
     overflow: hidden;
   }
@@ -539,9 +538,9 @@ input[type=range] {
     margin-left: auto;
     margin-right: auto;
     width: 100vw;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -634,7 +633,7 @@ input[type=range] {
     border: 1px solid #ffffff;
     border-top: none;
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -656,7 +655,7 @@ input[type=range] {
   .questions-item {
     position: relative;
     width: 100%;
-    border-top: 1px solid white;
+    border-top: 1px solid #70a1cf;
     padding: 15px 0;
   }
   .questions-subtitle {
@@ -905,13 +904,11 @@ input[type=range] {
   .about {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
-    height: 800px;
+    width: 100%;
     background-color: transparent;
     border: 1px solid #ffffff;
     border-top: none;
     display: flex;
-    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -923,17 +920,20 @@ input[type=range] {
     font-weight: 600;
   }
   .about-list {
-    padding: 50px 0;
+    padding: 25px;
+    width: 100%;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
   .about-item {
     position: relative;
-    width: 250px;
-    margin-left: 100px;
+    width: 270px;
+    margin-bottom: 25px;
     padding: 7px;
+    padding-left: 75px;
     border-radius: 10px;
   }
   .about-subtitle {
@@ -951,36 +951,54 @@ input[type=range] {
   }
   .about_icon {
     position: absolute;
-    left: -65px;
+    left: 0px;
     top: 50%;
     transform: translateY(-50%);
     fill: white;
     width: 50px;
     height: 50px;
   }
+  .about-persons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  .about-persons_name {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .about-person {
+    color: white;
+    font-size: 22px;
+  }
   .about-contacts {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding-top: 5px;
     display: flex;
-    gap: 100px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-bottom: 3px solid white;
     padding-bottom: 50px;
-    width: 88%;
+    width: 100%;
   }
   .about-contacts_link {
     padding: 4px 3px;
     display: flex;
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     align-items: center;
   }
   .about-contacts_icon {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     fill: white;
     margin-right: 15px;
   }
@@ -988,17 +1006,20 @@ input[type=range] {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
   }
   .about-socials_item {
-    margin-left: 65px;
+    margin-left: 25px;
+  }
+  .about-socials_item:first-child {
+    margin-left: 0;
   }
   .about-socials_link {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
   }
   .about-socials_icon {
     width: 50px;
