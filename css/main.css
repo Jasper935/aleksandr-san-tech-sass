@@ -669,7 +669,7 @@ input[type=range] {
     opacity: 1;
     display: block;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     transition: all 0.1s ease;
     transform: scale(1);
     color: white;
