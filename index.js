@@ -16,7 +16,7 @@ fetchReviews().then((res) => { createMarkUp(res, true) })
 
 async function fetchReviews() {
   return await fetch('https://6348b82ea59874146b0f8c0a.mockapi.io/reviews').then((res) => res.json()).catch((err) => {
-    alert(err)
+    console.log(err);
   })
 }
 
@@ -28,7 +28,7 @@ async function setReview(obj = {}) {
       'Content-Type': 'application/json'
     }, body: JSON.stringify(obj)
   }).catch((err) => {
-    alert(err)
+    console.log(err);
   })
 }
 
@@ -56,7 +56,7 @@ async function onSubmit(e) {
   moreBtn.textContent = 'більше відгуків...'
 }
 function onClick() {
-  if(moreBtn.textContent==='Це все'){
+  if (moreBtn.textContent === 'Це все') {
     return
   }
   startIndex += 10
@@ -70,7 +70,7 @@ function createMarkUp(res, deleteLastMarkUp = false) {
 
   const newRes = res.reverse().filter((el, i) => i >= startIndex && i < endIndex)
 
-  
+
 
   const markUp = newRes.map((el, i) =>
     `<li class="reviews-item">
@@ -89,13 +89,13 @@ function createMarkUp(res, deleteLastMarkUp = false) {
     list.innerHTML = markUp
     return
   }
-  
+
   list.insertAdjacentHTML('beforeend', markUp)
   if (!newRes.length) {
     moreBtn.textContent = 'Це все'
     startIndex = 0
-  endIndex = 10
+    endIndex = 10
     return
   }
-  
+
 }
