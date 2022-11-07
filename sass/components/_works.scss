@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 320px)  and (max-width: 768px){
+@media screen and (min-width: 320px)  and (max-width: 767px){
 .works{
     margin-left: auto;
     margin-right: auto;
@@ -49,6 +49,57 @@ border-radius: 10px;
 }
 
 
+}
+/* TABLET----------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .works{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    
+        padding-bottom: 50px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        border-top: none;
+    
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .works-title{
+        color: white;
+    
+        margin: 50px 0;
+    margin-bottom: 50px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .works-wrap{
+        box-shadow: 0 0 10px 0px #8ba0ad; 
+   
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    border-radius: 10px;
+    }
+    .works-img{
+        height: auto;
+        width: 100%;
+        margin: 10px;
+        margin-left: 50px;
+        padding:  50px 100px;
+        
+    }
+    .works-img:last-child{
+        margin-right: 0;
+    }
+    .works-img:first-child{
+        margin-left: 0;
+    }
 }
 /* DESKPOT-----------------------------------------------------------------------------*/
 @media (min-width: 1200px) {

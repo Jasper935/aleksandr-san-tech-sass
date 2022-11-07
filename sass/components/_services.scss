@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px)  and (max-width: 768px){
+@media screen and (min-width: 320px)  and (max-width: 767px){
   .services {
     
     margin-left: auto;
@@ -50,7 +50,60 @@
   }
   
 }
+/* TABLET----------------------------------------------------------------------------------------- */
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .services {
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+   padding-bottom: 50px;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;
+    
+   
+  
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }
+  .services-title {
+    color: #255171;
+    margin: 50px 0;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .service-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    padding: 50px 50px;
+    
+    box-shadow: 0 0 10px 2px #a4a6b2;
+  }
+  .service-item {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #835454;
+    margin-top: 15px;
+  }
+  .service-name {
+    color: #255171;
+    font-size: 18px;
+  }
+  .service-price {
+    color: #255171;
+    margin-left: auto;
+    font-size: 18px;
+  }
+  
+}
 /* DESKPOT-----------------------------------------------------------------------------*/
 @media (min-width: 1200px) {
 .services {

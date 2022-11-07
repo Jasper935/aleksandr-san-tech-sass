@@ -1,20 +1,18 @@
-@media screen and (min-width: 320px)  and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .about {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    
 
     background-color: transparent;
     border: 1px solid #ffffff;
     border-top: none;
 
     display: flex;
-    
+
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
   }
   .about-title {
     color: white;
@@ -30,33 +28,33 @@
     width: 100%;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
-display: flex;
-align-items: center;
-flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
-  .about-item{
+  .about-item {
     position: relative;
-width: 270px;
-margin-bottom: 25px;
+    width: 270px;
+    margin-bottom: 25px;
 
-padding: 7px;
-padding-left: 75px;
-border-radius: 10px;
+    padding: 7px;
+    padding-left: 75px;
+    border-radius: 10px;
   }
-  .about-subtitle{
+  .about-subtitle {
     font-size: 20px;
     text-align: center;
-color: white;
-line-height: normal;
-margin-bottom: 10px;
+    color: white;
+    line-height: normal;
+    margin-bottom: 10px;
   }
-  .about_range{
+  .about_range {
     font-size: 17px;
     text-align: center;
     color: white;
     font-weight: 400;
   }
-  .about_icon{
+  .about_icon {
     position: absolute;
     left: 0px;
     top: 50%;
@@ -67,99 +65,245 @@ margin-bottom: 10px;
   }
 
   //-------------------------------------------------
-.about-persons{
-  margin-top: 25px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 15px;
-}
-.about-persons_name{
-color: white;
-font-size: 20px;
-margin-bottom: 10px;
-font-weight: 300;
-}
-.about-person{
-  color: white;
-  font-size: 22px;
-  // font-weight: 500;
-}
+  .about-persons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  .about-persons_name {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .about-person {
+    color: white;
+    font-size: 22px;
+    // font-weight: 500;
+  }
 
-
-//-------------------------------------------------
+  //-------------------------------------------------
   .about-contacts {
     margin-top: 25px;
     margin-bottom: 25px;
     padding-top: 5px;
-     display: flex;
-     flex-direction: column;
-    
-     align-items: center;
-     justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
     //  border-bottom: 3px solid white;
     //  padding-bottom: 50px;
-    
-     width: 100%;
-   }
-   .about-contacts_link {
-     padding: 4px 3px;
-     display: flex;
-     
-     color: white;
-     text-decoration: none;
-     font-size: 20px;
-     align-items: center;
-   }
 
-   .about-contacts_icon {
-     width: 25px;
-     height: 25px;
-     fill: white;
-     margin-right: 15px;
-   }
-   //-----------------------------------------
-   .about-socials_list{
-    
+    width: 100%;
+  }
+  .about-contacts_link {
+    padding: 4px 3px;
+    display: flex;
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .about-contacts_icon {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    margin-right: 15px;
+  }
+  //-----------------------------------------
+  .about-socials_list {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-     padding-bottom: 50px;
-     margin-top: 30px;
-     
-    }
-    .about-socials_item{
-     
-        margin-left: 25px;
-    }
-    .about-socials_item:first-child{
-      margin-left: 0;
-    }
-    .about-socials_link{
-        
-        width: 50px;
-        height: 50px;
-        
-    }
-    .about-socials_icon{
-      width: 50px;
-      height: 50px;
-      fill: white;
-      transition: all 0.3s ease;
-    }
-   
-    .about-socials_icon:hover{
-        transform: translateY(-2px);
-        transition: all 0.3s ease;
-        fill: black;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    margin-top: 30px;
+  }
+  .about-socials_item {
+    margin-left: 25px;
+  }
+  .about-socials_item:first-child {
+    margin-left: 0;
+  }
+  .about-socials_link {
+    width: 50px;
+    height: 50px;
+  }
+  .about-socials_icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    transition: all 0.3s ease;
+  }
+
+  .about-socials_icon:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    fill: black;
+  }
 }
+/* TABLET----------------------------------------------------------------------------------------- */
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .about-title {
+    color: white;
+
+    margin: 50px 0;
+
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .about-list {
+    padding: 25px;
+    width: 100%;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-item {
+    position: relative;
+    width: 270px;
+    margin-bottom: 25px;
+
+    padding: 7px;
+    padding-left: 75px;
+    border-radius: 10px;
+  }
+  .about-subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .about_range {
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+  }
+  .about_icon {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: white;
+    width: 50px;
+    height: 50px;
+  }
+
+  //-------------------------------------------------
+  .about-persons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  .about-persons_name {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .about-person {
+    color: white;
+    font-size: 22px;
+    // font-weight: 500;
+  }
+
+  //-------------------------------------------------
+  .about-contacts {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    //  border-bottom: 3px solid white;
+    //  padding-bottom: 50px;
+
+    width: 100%;
+  }
+  .about-contacts_link {
+    padding: 4px 3px;
+    display: flex;
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .about-contacts_icon {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    margin-right: 15px;
+  }
+  //-----------------------------------------
+  .about-socials_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    margin-top: 30px;
+  }
+  .about-socials_item {
+    margin-left: 25px;
+  }
+  .about-socials_item:first-child {
+    margin-left: 0;
+  }
+  .about-socials_link {
+    width: 50px;
+    height: 50px;
+  }
+  .about-socials_icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    transition: all 0.3s ease;
+  }
+
+  .about-socials_icon:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    fill: black;
+  }
+}
 /* DESKPOT-----------------------------------------------------------------------------*/
 @media (min-width: 1200px) {
   .about {
@@ -173,11 +317,10 @@ font-weight: 300;
     border-top: none;
 
     display: flex;
-    
+
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
   }
   .about-title {
     color: white;
@@ -192,31 +335,31 @@ font-weight: 300;
     padding: 50px 0;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
   }
-  .about-item{
+  .about-item {
     position: relative;
-width: 250px;
-margin-left: 100px;
+    width: 250px;
+    margin-left: 100px;
 
-padding: 7px;
-border-radius: 10px;
+    padding: 7px;
+    border-radius: 10px;
   }
-  .about-subtitle{
+  .about-subtitle {
     font-size: 20px;
     text-align: center;
-color: white;
-line-height: normal;
-margin-bottom: 10px;
+    color: white;
+    line-height: normal;
+    margin-bottom: 10px;
   }
-  .about_range{
+  .about_range {
     font-size: 17px;
     text-align: center;
     color: white;
     font-weight: 400;
   }
-  .about_icon{
+  .about_icon {
     position: absolute;
     left: -65px;
     top: 50%;
@@ -225,89 +368,82 @@ margin-bottom: 10px;
     width: 50px;
     height: 50px;
   }
-//-------------------------------------------------
-.about-persons{
-  margin-top: 75px;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.about-persons_name{
-color: white;
-font-size: 30px;
-margin-right: 10px;
-font-weight: 300;
-}
-.about-person{
-  color: white;
-  font-size: 30px;
-  // font-weight: 500;
-}
+  //-------------------------------------------------
+  .about-persons {
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-persons_name {
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+    font-weight: 300;
+  }
+  .about-person {
+    color: white;
+    font-size: 30px;
+    // font-weight: 500;
+  }
 
-
-//-------------------------------------------------
+  //-------------------------------------------------
 
   .about-contacts {
     margin-top: 75px;
-   
-    padding-top: 5px;
-     display: flex;
-     gap: 100px;
-     align-items: center;
-     justify-content: center;
-    //  border-bottom: 3px solid white;
-     margin-bottom: 75px;
-    
-     width: 88%;
-   }
-   .about-contacts_link {
-     padding: 4px 3px;
-     display: flex;
-     
-     color: white;
-     text-decoration: none;
-     font-size: 30px;
-     align-items: center;
-   }
 
-   .about-contacts_icon {
-     width: 50px;
-     height: 50px;
-     fill: white;
-     margin-right: 15px;
-   }
-   //-----------------------------------------
-   .about-socials_list{
-    
+    padding-top: 5px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    //  border-bottom: 3px solid white;
+    margin-bottom: 75px;
+
+    width: 88%;
+  }
+  .about-contacts_link {
+    padding: 4px 3px;
+    display: flex;
+
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    align-items: center;
+  }
+
+  .about-contacts_icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    margin-right: 15px;
+  }
+  //-----------------------------------------
+  .about-socials_list {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 75%;
-  
-     padding-bottom: 75px;
-     
-    }
-    .about-socials_item{
-     
-        margin-left: 65px;
-    }
-    .about-socials_link{
-        
-        width: 75px;
-        height: 75px;
-        
-    }
-    .about-socials_icon{
-      width: 50px;
-      height: 50px;
-      fill: white;
-      transition: all 0.3s ease;
-    }
-   
-    .about-socials_icon:hover{
-        transform: translateY(-2px);
-        transition: all 0.3s ease;
-        fill: black;
-    }
-}
 
+    padding-bottom: 75px;
+  }
+  .about-socials_item {
+    margin-left: 65px;
+  }
+  .about-socials_link {
+    width: 75px;
+    height: 75px;
+  }
+  .about-socials_icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    transition: all 0.3s ease;
+  }
+
+  .about-socials_icon:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    fill: black;
+  }
+}

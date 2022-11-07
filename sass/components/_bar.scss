@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px)  and (max-width: 768px){
+@media screen and (min-width: 320px)  and (max-width: 767px){
     .header-bar{
         width: 100%;
         display: flex;
@@ -75,6 +75,86 @@
             transform: translateY(-2px);
             transition: all 0.3s ease;
         }
+}
+/* TABLET----------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header-bar{
+        width: 100%;
+        display: flex;
+        height: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        margin-bottom: 5px;
+        }
+        .bar-list{
+        display: flex;
+        margin-left: 25px;
+        
+        }
+        .bar-item{
+            position: relative;
+            display: flex;
+            align-items: center;
+        margin-right: 30px;
+        }
+        .bar_text{
+            font-size: 18px;
+            color: rgb(33, 42, 39);
+        }
+        .bar_icon{
+            position: absolute;
+            top: 48%;
+            transform: translateY(-50%);
+            right: -20px;
+            width: 15px;
+            height: 15px;
+            fill: green;
+        }
+        .bar-title{
+            
+            margin: 0;
+            margin-left: auto;
+            height: 20px;
+            font-size: 18px;
+            font-weight: 400;
+            display: flex;
+            display: none;
+            align-items: center;
+        }
+        .bar-socials_list{
+        display: flex;
+        margin-right: 25px;
+        align-items: center;
+        
+        }
+        .bar-socials_item{
+            margin-top: 10px;
+            margin-left: 25px;
+        }
+        .bar-socials_item:first-child{
+            margin-left: 0;
+        }
+        .bar-socials_link{
+            
+            width: 50px;
+            height: 50px;
+        }
+        .bar-socials_icon{
+        width: 30px;
+        height: 30px;
+        
+        transition: all 0.3s ease;
+        }
+        
+        .bar-socials_icon:hover{
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }  
 }
 /* DESKPOT-----------------------------------------------------------------------------*/
 @media (min-width: 1200px) {
