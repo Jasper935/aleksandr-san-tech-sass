@@ -662,13 +662,11 @@ input[type=range] {
   }
   .swiper-slide {
     position: relative;
-    width: 320px;
     height: auto;
   }
   .swiper-img {
     display: none;
     display: block;
-    width: 100%;
     height: 100%;
     background-size: cover;
   }
