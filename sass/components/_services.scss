@@ -25,7 +25,10 @@
   }
 
   .services-info{
+    margin-bottom: 25px;
     color: red;
+    text-align: center;
+    padding: 0 10px;
   }
   .service-list {
     width: 100%;
@@ -44,6 +47,7 @@
     margin-top: 15px;
   }
   .service-name {
+    width: 40%;
     color: #255171;
     font-size: 12px;
   }
@@ -51,6 +55,8 @@
     color: #255171;
     margin-left: auto;
     font-size: 12px;
+    padding-top: 10px;
+
   }
   
 }
@@ -80,6 +86,12 @@
     margin: 50px 0;
     font-size: 25px;
     font-weight: 600;
+  }
+  .services-info{
+    margin-bottom: 25px;
+    color: red;
+    text-align: center;
+    padding: 0 10px;
   }
   .service-list {
     width: 100%;
