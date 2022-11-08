@@ -759,6 +759,9 @@ input[type=range] {
     font-size: 25px;
     font-weight: 600;
   }
+  .services-info {
+    color: red;
+  }
   .service-list {
     width: 100%;
     display: flex;
@@ -849,8 +852,13 @@ input[type=range] {
   .services-title {
     color: white;
     margin: 100px 0;
+    margin-bottom: 50px;
     font-size: 45px;
     font-weight: 600;
+  }
+  .services-info {
+    color: red;
+    font-size: 18px;
   }
   .service-list {
     display: flex;
@@ -1945,7 +1953,7 @@ input[type=range] {
   .reviews-message {
     display: flex;
     align-items: center;
-    color: #6b6394;
+    color: #101332;
     font-size: 15px;
   }
   .more-btn {
@@ -1953,7 +1961,7 @@ input[type=range] {
     margin-top: 25px;
     padding: 5px 10px;
     border: none;
-    background-color: #6b6394;
+    background-color: #101332;
     color: white;
     box-shadow: 0 0 10px 0px #8ba0ad;
   }
@@ -2022,7 +2030,7 @@ input[type=range] {
     resize: none;
   }
   .reviews-btn {
-    background-color: #6b6394;
+    background-color: #101332;
     height: 40px;
     width: 200px;
     color: white;
@@ -2066,7 +2074,7 @@ input[type=range] {
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    fill: #6b6394;
+    fill: #101332;
   }
   .reviews-name {
     margin: 0;
@@ -2083,7 +2091,7 @@ input[type=range] {
   .reviews-message {
     display: flex;
     align-items: center;
-    color: #6b6394;
+    color: #101332;
     font-size: 15px;
     padding: 0 15px;
     width: 880px;
@@ -2093,7 +2101,7 @@ input[type=range] {
     margin-top: 25px;
     padding: 5px 10px;
     border: none;
-    background-color: #6b6394;
+    background-color: #101332;
     color: white;
     box-shadow: 0 0 10px 0px #8ba0ad;
   }

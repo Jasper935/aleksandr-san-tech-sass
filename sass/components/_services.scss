@@ -23,6 +23,10 @@
     font-size: 25px;
     font-weight: 600;
   }
+
+  .services-info{
+    color: red;
+  }
   .service-list {
     width: 100%;
     display: flex;
@@ -124,8 +128,13 @@
 .services-title {
   color: white;
   margin: 100px 0;
+  margin-bottom: 50px;
   font-size: 45px;
   font-weight: 600;
+}
+.services-info{
+  color: red;
+  font-size: 18px;
 }
 .service-list {
   display: flex;
