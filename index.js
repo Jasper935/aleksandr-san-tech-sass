@@ -15,7 +15,7 @@ fetchReviews().then((res) => { createMarkUp(res, true) })
 
 
 async function fetchReviews() {
-  return await fetch('https://6348b82ea59874146b0f8c0a.mockapi.io/reviews').then((res) => res.json()).catch((err) => {
+  return await fetch('https://636a8dd8c07d8f936da19655.mockapi.io/reviews').then((res) => res.json()).catch((err) => {
     console.log(err);
   })
 }
@@ -23,7 +23,7 @@ async function fetchReviews() {
 
 async function setReview(obj = {}) {
 
-  return fetch('https://6348b82ea59874146b0f8c0a.mockapi.io/reviews', {
+  return fetch('https://636a8dd8c07d8f936da19655.mockapi.io/reviews', {
     method: "post", headers: {
       'Content-Type': 'application/json'
     }, body: JSON.stringify(obj)
