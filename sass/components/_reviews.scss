@@ -71,7 +71,7 @@ text-align: center;
   }
 
   .reviews-btn {
-    background-color: #6b6394;
+    background-color: #101332;
     height: 40px;
     width: 200px;
     color: white;
@@ -82,7 +82,7 @@ text-align: center;
   }
   .reviews-btn:hover {
     // background-color: rgb(69, 63, 63);
-    box-shadow: 0 0 10px 2px #7f87c6;
+    box-shadow: 0 0 10px 2px #101332;
   }
   .reviews-btn--success {
     background-color: #3fa67b;
@@ -121,7 +121,7 @@ text-align: center;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    fill: #6b6394;
+    fill: #101332;
   }
 
   .reviews-name {
@@ -140,7 +140,7 @@ text-align: center;
   .reviews-message {
     display: flex;
     align-items: center;
-    color: #6b6394;
+    color: #101332;
     font-size: 15px;
     
     // text-align: center;
@@ -150,7 +150,7 @@ text-align: center;
     margin-top: 25px;
     padding: 5px 10px;
     border: none;
-    background-color: #6b6394;
+    background-color: #101332;
     color: white;
     box-shadow: 0 0 10px 0px #8ba0ad;
   }

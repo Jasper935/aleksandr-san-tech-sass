@@ -52,10 +52,13 @@
     font-size: 12px;
   }
   .service-price {
+    display: flex;
+    align-items: flex-end;
+   
     color: #255171;
     margin-left: auto;
     font-size: 12px;
-    padding-top: 10px;
+    // padding-top: 10px;
 
   }
   

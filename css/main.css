@@ -783,10 +783,11 @@ input[type=range] {
     font-size: 12px;
   }
   .service-price {
+    display: flex;
+    align-items: flex-end;
     color: #255171;
     margin-left: auto;
     font-size: 12px;
-    padding-top: 10px;
   }
 }
 
@@ -1327,6 +1328,68 @@ input[type=range] {
     font-size: 25px;
     font-weight: 600;
   }
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .about-info_text {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .about-info-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    margin-top: -10px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+  }
+  .about-info-item {
+    position: relative;
+    margin: 15px 0;
+    padding-left: 5px;
+  }
+  .about-info-item::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+  }
+  .about-info-item_text {
+    color: white;
+    font-size: 13px;
+  }
+  .about-info_text--first {
+    text-align: left;
+  }
+  .about-info_text--span {
+    color: #cea853;
+  }
+  .about-info_text--last {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .about-info_text--last::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
   .about-list {
     padding: 25px;
     width: 100%;
@@ -1460,6 +1523,68 @@ input[type=range] {
     margin: 50px 0;
     font-size: 25px;
     font-weight: 600;
+  }
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 100px;
+  }
+  .about-info_text {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .about-info-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    margin-top: -10px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+  }
+  .about-info-item {
+    position: relative;
+    margin: 15px 0;
+    padding-left: 5px;
+  }
+  .about-info-item::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+  }
+  .about-info-item_text {
+    color: white;
+    font-size: 20px;
+  }
+  .about-info_text--first {
+    text-align: left;
+  }
+  .about-info_text--span {
+    color: #cea853;
+  }
+  .about-info_text--last {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .about-info_text--last::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #ffffff;
   }
   .about-list {
     padding: 25px;
@@ -1822,7 +1947,7 @@ input[type=range] {
     resize: none;
   }
   .reviews-btn {
-    background-color: #6b6394;
+    background-color: #101332;
     height: 40px;
     width: 200px;
     color: white;
@@ -1832,7 +1957,7 @@ input[type=range] {
     padding: 0 15px;
   }
   .reviews-btn:hover {
-    box-shadow: 0 0 10px 2px #7f87c6;
+    box-shadow: 0 0 10px 2px #101332;
   }
   .reviews-btn--success {
     background-color: #3fa67b;
@@ -1867,7 +1992,7 @@ input[type=range] {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    fill: #6b6394;
+    fill: #101332;
   }
   .reviews-name {
     margin: 0;
@@ -1885,7 +2010,7 @@ input[type=range] {
   .reviews-message {
     display: flex;
     align-items: center;
-    color: #6b6394;
+    color: #101332;
     font-size: 15px;
   }
   .more-btn {
@@ -1893,7 +2018,7 @@ input[type=range] {
     margin-top: 25px;
     padding: 5px 10px;
     border: none;
-    background-color: #6b6394;
+    background-color: #101332;
     color: white;
     box-shadow: 0 0 10px 0px #8ba0ad;
   }
